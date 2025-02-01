@@ -23,7 +23,7 @@
 
     // Tambahkan gambar pada tombol utama
     const mainImage = document.createElement('img');
-    mainImage.src = 'https://pokhok.biz/menuWidget/images/SQUAD777.gif';
+    mainImage.src = ''https://yudha125.github.io/menu-widget/Image/SQUAD777.gif';
     mainImage.style.width = '100px';
     mainImage.style.bottom = '-10px';
     mainImage.style.left = '-10px';
@@ -43,10 +43,10 @@
 
     // Tambahkan elemen tombol tambahan
     const actions = [
-        { href: 'https://t.me/Squad777official', img: 'https://pokhok.biz/menuWidget/images/tele.gif' },
-        { href: 'https://t.ly/rtp-squad777', img: 'https://pokhok.biz/menuWidget/images/rtp.gif' },
-        { href: 'https://api.whatsapp.com/send/?phone=6287718192707&text&type=phone_number&app_absent=0', img: 'https://pokhok.biz/menuWidget/images/wa.gif' },
-        { href: 'https://www.facebook.com/share/g/15YseMVEj3/', img: 'https://pokhok.biz/menuWidget/images/fb.gif' }
+        { href: 'https://t.me/Squad777official', img: ''https://yudha125.github.io/menu-widget/Image/tele.gif' },
+        { href: 'https://t.ly/rtp-squad777', img: ''https://yudha125.github.io/menu-widget/Image/rtp.gif' },
+        { href: 'https://api.whatsapp.com/send/?phone=6287718192707&text&type=phone_number&app_absent=0', img: ''https://yudha125.github.io/menu-widget/Image/wa.gif' },
+        { href: 'https://www.facebook.com/share/g/15YseMVEj3/', img: ''https://yudha125.github.io/menu-widget/Image/fb.gif' }
     ];
 
     actions.forEach((action, index) => {
@@ -88,6 +88,6 @@
         // Ubah gambar mainImage saat tombol ditekan
         mainImage.src = isActive
             ? 'https://images.emojiterra.com/google/noto-emoji/animated-emoji/274c.gif'
-            : 'https://pokhok.biz/menuWidget/images/SQUAD777.gif';
+            : ''https://yudha125.github.io/menu-widget/Image/SQUAD777.gif';
     });
 })();
