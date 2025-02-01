@@ -79,7 +79,7 @@ function addDynamicContent(url1, url2, url3, url4) {
             menuDiv.classList.add('menu-download');
 
             const imgA = document.createElement('img');
-            imgA.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/SAVE.gif';
+            imgA.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/SAVE.gif';
             imgA.alt = 'Click Me';
             imgA.id = 'clickImage';
             menuDiv.appendChild(imgA);
@@ -90,7 +90,7 @@ function addDynamicContent(url1, url2, url3, url4) {
 
             // Gambar pertama
             const img1 = document.createElement('img');
-            img1.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/FORANDROID.jpg';
+            img1.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/FORANDROID.jpg';
             img1.alt = 'image1';
             const link1 = document.createElement('a');
             link1.href = "https://www.gameiosapk.com/android.php";
@@ -100,7 +100,7 @@ function addDynamicContent(url1, url2, url3, url4) {
 
             // Gambar kedua
             const img2 = document.createElement('img');
-            img2.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/FOR_IOS.jpg';
+            img2.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/FOR_IOS.jpg';
             img2.alt = 'image2';
             const link2 = document.createElement('a');
             link2.href = "https://www.gameiosapk.com/iphone.php";
@@ -168,7 +168,7 @@ function addDynamicContent(url1, url2, url3, url4) {
 
     const mainImage = document.createElement('img');
     if (url2 === 'https://pro.rtpyk-69.beauty/') {
-        mainImage.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/YUK69A.gif';
+        mainImage.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/YUK69A.gif';
         mainImage.style.height = '90px';
         mainImage.style.maxWidth = '90px';
         mainImage.style.bottom = '-5px';
@@ -178,7 +178,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         actionButton.appendChild(mainImage);
 
     } else if (url2 === 'https://t.ly/rtp-hoki777/') {
-        mainImage.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/HOKI.gif';
+        mainImage.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/HOKI.gif';
         mainImage.style.height = '90px';
         mainImage.style.maxWidth = '95px';
         mainImage.style.bottom = '15px';
@@ -187,7 +187,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         actionButton.appendChild(mainImage);
 
     } else if (url2 === 'https://es.pola-metrowin88.site/') {
-        mainImage.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/METROWIN88.gif';
+        mainImage.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/METROWIN88.gif';
         mainImage.style.width = '90px';
         mainImage.style.bottom = '10px';
         mainImage.style.left = '15px';
@@ -195,7 +195,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         actionButton.appendChild(mainImage);
 
     } else if (url2 === 'https://pola.rtp-tvonepkr.shop') {
-        mainImage.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/TVONE.gif';
+        mainImage.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/TVONE.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '70px';
         mainImage.style.bottom = '30px';
@@ -203,7 +203,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
     } else if (url2 === 'https://es.rtp-sctvpkr.cam/') {
-        mainImage.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/SCTV.gif';
+        mainImage.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/SCTV.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '70px';
         mainImage.style.bottom = '30px';
@@ -211,7 +211,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
     } else if (url2 === 'https://id.rtp-metropkr.online/') {
-        mainImage.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/METROTVPOKER.gif';
+        mainImage.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/METROTVPOKER.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '80px';
         mainImage.style.bottom = '20px';
@@ -219,7 +219,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
     } else if (url2 === 'https://pola.rtp-nettvpkr.cyou/') {
-        mainImage.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/NETTV.gif';
+        mainImage.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/NETTV.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '80px';
         mainImage.style.bottom = '25px';
@@ -227,7 +227,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
     } else if (url2 === 'https://pro.rtp-pkhk.biz/') {
-        mainImage.src = 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/POKERHOKIBET88.gif';
+        mainImage.src = 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/POKERHOKIBET88.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '80px';
         mainImage.style.bottom = '25px';
@@ -246,10 +246,10 @@ function addDynamicContent(url1, url2, url3, url4) {
     actionsList.style.listStyle = 'none';
 
     const actions = [
-        { href: url1, img: 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/tele.gif' },
-        { href: url2, img: 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/rtp.gif' },
-        { href: url3, img: 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/wa.gif' },
-        { href: url4, img: 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/fb.gif' }
+        { href: url1, img: 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/tele.gif' },
+        { href: url2, img: 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/rtp.gif' },
+        { href: url3, img: 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/wa.gif' },
+        { href: url4, img: 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/fb.gif' }
     ];
 
 
@@ -303,23 +303,23 @@ function addDynamicContent(url1, url2, url3, url4) {
             })()
             : (() => {
                 if (url2 === 'https://pro.rtpyk-69.beauty/') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/YUK69A.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/YUK69A.gif';
                 } else if (url2 === 'https://t.ly/rtp-hoki777/') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/HOKI.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/HOKI.gif';
                 } else if (url2 === 'https://es.pola-metrowin88.site/') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/METROWIN88.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/METROWIN88.gif';
                 } else if (url2 === 'https://t.ly/rtp-squad777') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/SQUAD777.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/SQUAD777.gif';
                 } else if (url2 === 'https://pola.rtp-tvonepkr.shop') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/TVONE.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/TVONE.gif';
                 } else if (url2 === 'https://es.rtp-sctvpkr.cam/') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/SCTV.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/SCTV.gif';
                 } else if (url2 === 'https://id.rtp-metropkr.online/') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/METROTVPOKER.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/METROTVPOKER.gif';
                 } else if (url2 === 'https://pola.rtp-nettvpkr.cyou/') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/NETTV.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/NETTV.gif';
                 } else if (url2 === 'https://pro.rtp-pkhk.biz/') {
-                    return 'https://raw.githubusercontent.com/yudha125/menu-widget/refs/heads/main/Image/images/POKERHOKIBET88.gif';
+                    return 'https://cdn.jsdelivr.net/gh/yudha125/menu-widget/Image/images/POKERHOKIBET88.gif';
                 }
             })();
     });
