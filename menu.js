@@ -168,7 +168,7 @@ function addDynamicContent(url1, url2, url3, url4) {
 
     const mainImage = document.createElement('img');
     if (url2 === 'https://pro.rtpyk-69.beauty/') {
-        mainImage.src = 'Image/images/YUK69A.gif';
+        mainImage.src = 'Image/YUK69A.gif';
         mainImage.style.height = '90px';
         mainImage.style.maxWidth = '90px';
         mainImage.style.bottom = '-5px';
@@ -178,7 +178,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         actionButton.appendChild(mainImage);
 
     } else if (url2 === 'https://t.ly/rtp-hoki777/') {
-        mainImage.src = 'Image/images/HOKI.gif';
+        mainImage.src = 'Image/HOKI.gif';
         mainImage.style.height = '90px';
         mainImage.style.maxWidth = '95px';
         mainImage.style.bottom = '15px';
@@ -187,7 +187,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         actionButton.appendChild(mainImage);
 
     } else if (url2 === 'https://es.pola-metrowin88.site/') {
-        mainImage.src = 'Image/images/METROWIN88.gif';
+        mainImage.src = 'Image/METROWIN88.gif';
         mainImage.style.width = '90px';
         mainImage.style.bottom = '10px';
         mainImage.style.left = '15px';
@@ -195,7 +195,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         actionButton.appendChild(mainImage);
 
     } else if (url2 === 'https://pola.rtp-tvonepkr.shop') {
-        mainImage.src = 'Image/images/TVONE.gif';
+        mainImage.src = 'Image/TVONE.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '70px';
         mainImage.style.bottom = '30px';
@@ -203,7 +203,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
     } else if (url2 === 'https://es.rtp-sctvpkr.cam/') {
-        mainImage.src = 'Image/images/SCTV.gif';
+        mainImage.src = 'Image/SCTV.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '70px';
         mainImage.style.bottom = '30px';
@@ -211,7 +211,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
     } else if (url2 === 'https://id.rtp-metropkr.online/') {
-        mainImage.src = 'Image/images/METROTVPOKER.gif';
+        mainImage.src = 'Image/METROTVPOKER.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '80px';
         mainImage.style.bottom = '20px';
@@ -219,7 +219,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
     } else if (url2 === 'https://pola.rtp-nettvpkr.cyou/') {
-        mainImage.src = 'Image/images/NETTV.gif';
+        mainImage.src = 'Image/NETTV.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '80px';
         mainImage.style.bottom = '25px';
@@ -227,7 +227,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
     } else if (url2 === 'https://pro.rtp-pkhk.biz/') {
-        mainImage.src = 'Image/images/POKERHOKIBET88.gif';
+        mainImage.src = 'Image/POKERHOKIBET88.gif';
         mainImage.style.width = '90px';
         mainImage.style.maxHeight = '80px';
         mainImage.style.bottom = '25px';
@@ -246,10 +246,10 @@ function addDynamicContent(url1, url2, url3, url4) {
     actionsList.style.listStyle = 'none';
 
     const actions = [
-        { href: url1, img: 'Image/images/tele.gif' },
-        { href: url2, img: 'Image/images/rtp.gif' },
-        { href: url3, img: 'Image/images/wa.gif' },
-        { href: url4, img: 'Image/images/fb.gif' }
+        { href: url1, img: 'Image/tele.gif' },
+        { href: url2, img: 'Image/rtp.gif' },
+        { href: url3, img: 'Image/wa.gif' },
+        { href: url4, img: 'Image/fb.gif' }
     ];
 
 
@@ -303,23 +303,23 @@ function addDynamicContent(url1, url2, url3, url4) {
             })()
             : (() => {
                 if (url2 === 'https://pro.rtpyk-69.beauty/') {
-                    return 'Image/images/YUK69A.gif';
+                    return 'Image/YUK69A.gif';
                 } else if (url2 === 'https://t.ly/rtp-hoki777/') {
-                    return 'Image/images/HOKI.gif';
+                    return 'Image/HOKI.gif';
                 } else if (url2 === 'https://es.pola-metrowin88.site/') {
-                    return 'Image/images/METROWIN88.gif';
+                    return 'Image/METROWIN88.gif';
                 } else if (url2 === 'https://t.ly/rtp-squad777') {
-                    return 'Image/images/SQUAD777.gif';
+                    return 'Image/SQUAD777.gif';
                 } else if (url2 === 'https://pola.rtp-tvonepkr.shop') {
-                    return 'Image/images/TVONE.gif';
+                    return 'Image/TVONE.gif';
                 } else if (url2 === 'https://es.rtp-sctvpkr.cam/') {
-                    return 'Image/images/SCTV.gif';
+                    return 'Image/SCTV.gif';
                 } else if (url2 === 'https://id.rtp-metropkr.online/') {
-                    return 'Image/images/METROTVPOKER.gif';
+                    return 'Image/METROTVPOKER.gif';
                 } else if (url2 === 'https://pola.rtp-nettvpkr.cyou/') {
-                    return 'Image/images/NETTV.gif';
+                    return 'Image/NETTV.gif';
                 } else if (url2 === 'https://pro.rtp-pkhk.biz/') {
-                    return 'Image/images/POKERHOKIBET88.gif';
+                    return 'Image/POKERHOKIBET88.gif';
                 }
             })();
     });
