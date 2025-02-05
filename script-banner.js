@@ -5,7 +5,7 @@
     banner.id = "floating-banner";
     banner.innerHTML = `
         <a href="https://t.me/yuk69bot" target="_blank">
-            <img src="aab.jpg" alt="Promo Spesial">
+            <img src="https://yudha125.github.io/menu-widget/aab.jpg" alt="Promo Spesial">
         </a>
         <button id="close-banner">X</button>
     `;
