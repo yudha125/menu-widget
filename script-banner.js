@@ -18,7 +18,7 @@
     style.innerHTML = `
         #floating-banner {
             position: fixed;
-            width: 200px;
+            width: 180px;
             padding: 10px;
             background: white;
             border: 2px solid #ff9800;
