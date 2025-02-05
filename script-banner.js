@@ -35,7 +35,7 @@
             position: absolute;
             top: -10px;
             right: -10px;
-            background: red;
+            background: rgb(4, 18, 212);
             color: white;
             border: none;
             border-radius: 50%;
