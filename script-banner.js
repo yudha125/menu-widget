@@ -5,7 +5,7 @@
     banner.id = "floating-banner";
     banner.innerHTML = `
         <a href="https://t.me/yuk69bot" target="_blank">
-            <img src="https://yudha125.github.io/menu-widget/aab.jpg" alt="Promo Spesial">
+            <img src="https://yudha125.github.io/menu-widget/aaba.jpg" alt="Promo Spesial">
         </a>
         <button id="close-banner">X</button>
     `;
@@ -18,7 +18,7 @@
     style.innerHTML = `
         #floating-banner {
             position: fixed;
-            width: 80px;
+            width: 120px;
             padding: 10px;
             background: white;
             border: 2px solid #ff9800;
@@ -47,7 +47,7 @@
         }
             @media (max-width: 768px){
             #floating-banner {
-            width: 70px;
+            width: 80px;
             }
     `;
     document.head.appendChild(style);
