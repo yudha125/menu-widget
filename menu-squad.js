@@ -88,6 +88,6 @@
         // Ubah gambar mainImage saat tombol ditekan
         mainImage.src = isActive
             ? 'https://images.emojiterra.com/google/noto-emoji/animated-emoji/274c.gif'
-            : ''https://yudha125.github.io/menu-widget/Image/SQUAD777.gif';
+            : 'https://yudha125.github.io/menu-widget/Image/SQUAD777.gif';
     });
 })();
