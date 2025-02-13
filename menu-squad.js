@@ -23,7 +23,7 @@
 
     // Tambahkan gambar pada tombol utama
     const mainImage = document.createElement('img');
-    mainImage.src = ''https://yudha125.github.io/menu-widget/Image/SQUAD777.gif';
+    mainImage.src = 'https://yudha125.github.io/menu-widget/Image/SQUAD777.gif';
     mainImage.style.width = '100px';
     mainImage.style.bottom = '-10px';
     mainImage.style.left = '-10px';
