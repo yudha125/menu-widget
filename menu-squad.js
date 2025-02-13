@@ -43,10 +43,10 @@
 
     // Tambahkan elemen tombol tambahan
     const actions = [
-        { href: 'https://t.me/Squad777official', img: ''https://yudha125.github.io/menu-widget/Image/tele.gif' },
-        { href: 'https://t.ly/rtp-squad777', img: ''https://yudha125.github.io/menu-widget/Image/rtp.gif' },
-        { href: 'https://api.whatsapp.com/send/?phone=6287718192707&text&type=phone_number&app_absent=0', img: ''https://yudha125.github.io/menu-widget/Image/wa.gif' },
-        { href: 'https://www.facebook.com/share/g/15YseMVEj3/', img: ''https://yudha125.github.io/menu-widget/Image/fb.gif' }
+        { href: 'https://t.me/Squad777official', img: 'https://yudha125.github.io/menu-widget/Image/tele.gif' },
+        { href: 'https://t.ly/rtp-squad777', img: 'https://yudha125.github.io/menu-widget/Image/rtp.gif' },
+        { href: 'https://api.whatsapp.com/send/?phone=6287718192707&text&type=phone_number&app_absent=0', img: 'https://yudha125.github.io/menu-widget/Image/wa.gif' },
+        { href: 'https://www.facebook.com/share/g/15YseMVEj3/', img: 'https://yudha125.github.io/menu-widget/Image/fb.gif' }
     ];
 
     actions.forEach((action, index) => {
