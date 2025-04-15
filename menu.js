@@ -167,7 +167,7 @@ function addDynamicContent(url1, url2, url3, url4) {
     actionButton.style.cursor = "pointer";
 
     const mainImage = document.createElement('img');
-    if (url2 === 'https://pro.rtpyk-69.beauty/') {
+    if (url2 === 'https://t.ly/rtp-yuk69') {
         mainImage.src = 'https://yudha125.github.io/menu-widget/Image/YUK69A.gif';
         mainImage.style.height = '90px';
         mainImage.style.maxWidth = '90px';
