@@ -186,7 +186,7 @@ function addDynamicContent(url1, url2, url3, url4) {
         mainImage.style.position = 'absolute';
         actionButton.appendChild(mainImage);
 
-    } else if (url2 === 'https://es.pola-metrowin88.site/') {
+    } else if (url2 === 'https://t.ly/rtp-metrowin88/') {
         mainImage.src = 'https://yudha125.github.io/menu-widget/Image/METROWIN88.gif';
         mainImage.style.width = '90px';
         mainImage.style.bottom = '10px';
