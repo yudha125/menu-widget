@@ -23,7 +23,7 @@
 
     // Tambahkan gambar pada tombol utama
     const mainImage = document.createElement('img');
-    mainImage.src = 'images/list-6247.png';
+    mainImage.src = 'https://yudha125.github.io/menu-widget/Image/list-6247.png';
     mainImage.style.width = '90px';
     mainImage.style.bottom = '-10px';
     mainImage.style.left = '-10px';
