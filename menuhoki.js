@@ -29,6 +29,7 @@
     mainImage.style.left = '-10px';
     mainImage.style.position = 'absolute';
     mainImage.style.borderRadius = '25%';
+    mainImage.style.boxShadow = '0 2px 10px rgb(255, 255, 255)';
     actionButton.appendChild(mainImage);
 
     // Tambahkan tombol utama ke dalam multi-action
@@ -91,5 +92,8 @@
         mainImage.src = isActive
             ? 'https://images.emojiterra.com/google/noto-emoji/animated-emoji/274c.gif'
             : 'https://yudha125.github.io/menu-widget/Image/list-6247.png';
+        mainImage.style.boxShadow = isActive
+            ? '0 2px 10px rgb(255, 255, 255,0)'
+            : '0 2px 10px rgba(255, 255, 255)';
     });
 })();
