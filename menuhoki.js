@@ -16,9 +16,9 @@
     actionButton.style.width = '80px';
     actionButton.style.height = '80px';
     actionButton.style.borderRadius = '50%';
-    actionButton.style.background = '#f8f9fd';
+    actionButton.style.background = 'rgba(255, 255, 255, 0)';
     actionButton.style.border = 'none';
-    actionButton.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.16)';
+    // actionButton.style.boxShadow = '0 2px 10px rgba(223, 221, 221, 0.16)';
     actionButton.style.transition = 'all .3s';
 
     // Tambahkan gambar pada tombol utama
@@ -28,6 +28,7 @@
     mainImage.style.bottom = '-10px';
     mainImage.style.left = '-10px';
     mainImage.style.position = 'absolute';
+    mainImage.style.borderRadius = '25%';
     actionButton.appendChild(mainImage);
 
     // Tambahkan tombol utama ke dalam multi-action
@@ -52,14 +53,15 @@
     actions.forEach((action, index) => {
         const li = document.createElement('li');
         li.style.position = 'absolute';
-        li.style.width = '80px';
+        li.style.width = 'px';
         li.style.height = '80px';
         li.style.borderRadius = '50%';
         li.style.background = '#212121';
-        li.style.transition = 'all .3s';
+        li.style.transition = 'all .1s';
         li.style.transform = 'scale(0.3)';
         li.style.marginTop = `-${(index + 1) * 100}px`;
         li.style.opacity = '0';
+        li.style.marginLeft = '-9px';
 
         const a = document.createElement('a');
         a.href = action.href;
