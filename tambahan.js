@@ -2,21 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const style = document.createElement("style");
     style.textContent = `
          body {
-        background-image: url('asas.jpg') !important;
+        background-image: url('https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp') !important;
         background-size: cover !important;
         cursor: url('cursor64.png'), auto !important;
     }
 
     a {
-        cursor: url('cursor64tangan.png'), auto !important;
+        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64tangan.png'), auto !important;
     }
 
     div {
-        cursor: url('cursor64.png'), auto;
+        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64.png'), auto;
     }
 
     button {
-        cursor: url('cursor64tangan.png'), auto !important;
+        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64tangan.png'), auto !important;
     }
 
     .navbar-header .navbar-collapse.collapse {}
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.parentNode.insertBefore(wrapper, img);
             wrapper.appendChild(img);
             const frame = document.createElement("img");
-            frame.src = "aaaaaaaa.png";
+            frame.src = "https://yudha125.github.io/menu-widget/foreground/aaaaaaaa.png";
             frame.style.position = "absolute";
             frame.style.top = "0";
             frame.style.left = "0";
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
             wrapper.appendChild(navhead2);
             const frame = document.createElement("img");
             frame.id = "frame";
-            frame.src = "frame3.png";
+            frame.src = "https://yudha125.github.io/menu-widget/foreground/frame3.png";
             frame.style.position = "absolute";
             frame.style.top = "0";
             frame.style.left = "50%";
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
     bannerDiv.className = 'custom-banner';
     bannerDiv.style.margin = '20px 0';
     bannerDiv.innerHTML = `
-    <img src="giftpanjang.gif" alt="Banner Iklan" style="width:100%; max-width:840px; display:block; margin:0 auto;">
+    <img src="https://yudha125.github.io/menu-widget/foreground/giftpanjang.gif" alt="Banner Iklan" style="width:100%; max-width:840px; display:block; margin:0 auto;">
     `;
 
     // Cari parent container
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.parentNode.insertBefore(wrapper, img);
             wrapper.appendChild(img);
             const frame = document.createElement("img");
-            frame.src = "frame5.png";
+            frame.src = "https://yudha125.github.io/menu-widget/foreground/frame5.png";
             frame.style.position = "absolute";
             frame.style.top = "0";
             frame.style.left = "0";
@@ -258,59 +258,38 @@ document.addEventListener("DOMContentLoaded", function () {
         // Buat elemen frame atas
         const topFrame = document.createElement("div");
         topFrame.className = "container-img";
-        topFrame.innerHTML = `<img src="border.png" alt="" style="width: 100%; height: 20px;">`;
+        topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.png" alt="" style="width: 100%; height: 20px;">`;
         const bottomFrame = topFrame.cloneNode(true);
         latestResults.parentNode.insertBefore(topFrame, latestResults);
         latestResults.parentNode.insertBefore(bottomFrame, latestResults.nextSibling);
     }
-    const imgSisi1 = document.createElement('img');
-    imgSisi1.src = 'sisi.png'; // Ganti dengan path gambar kamu
-    imgSisi1.alt = 'Floating Banner';
-    imgSisi1.id = 'floating-banner2'; // Tambahkan ID untuk styling jika diperlukan
 
-    // Tambahkan style position absolute dan lainnya
-    imgSisi1.style.position = 'fixed';
-    imgSisi1.style.top = '0';        // Sesuaikan posisi vertikal
-    imgSisi1.style.left = '0';      // Bisa diganti ke 'left' jika perlu
-    imgSisi1.style.width = '150px';     // Atur ukuran sesuai kebutuhan
-    imgSisi1.style.zIndex = '9999';
-    imgSisi1.style.cursor = 'pointer';
+    const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
 
-    document.body.appendChild(imgSisi1);
-    const imgSisi2 = document.createElement('img');
-    imgSisi2.src = 'sisi.png'; // Ganti dengan path gambar kamu
-    imgSisi2.alt = 'Floating Banner';
-    imgSisi2.id = 'floating-banner2'; // Tambahkan ID untuk styling jika diperlukan
+    // Daftar nama bank sesuai urutan yang ingin ditampilkan
+    const newBankImages = [
+        'BCA.gif',
+        'BNI.gif',
+        'BRI.gif',
+        'DANA.gif',
+        'GOPAY.gif',
+        'MANDIRI.gif',
+        'OVO.gif',
+        'PULSA.gif'
+    ];
 
-    // Tambahkan style position absolute dan lainnya
-    imgSisi2.style.position = 'fixed';
-    imgSisi2.style.top = '0';        // Sesuaikan posisi vertikal
-    imgSisi2.style.right = '0';      // Bisa diganti ke 'left' jika perlu
-    imgSisi2.style.width = '150px';     // Atur ukuran sesuai kebutuhan
-    imgSisi2.style.zIndex = '9999';
-    imgSisi2.style.cursor = 'pointer';
+    bankImages.forEach((item, index) => {
+        const oldImg = item.querySelector('img');
+        if (oldImg) oldImg.remove(); // Hapus gambar lama jika ada
 
-    document.body.appendChild(imgSisi2);
-    // const sectionTop = document.querySelectorAll("section.margin-top");
-    // const kontainerTambahan = document.createElement("div");
-    // kontainerTambahan.className = "container container-plus-1";
-    // kontainerTambahan.style.margin = "0 auto";
-    // kontainerTambahan.style.background = " rgba(0, 0, 0, 0.85)";
-    // kontainerTambahan.style.padding = "0 20px 15px 20px";
-    // kontainerTambahan.innerHTML = `
-    //     <div class="row">
-    //     <div class="col-md-12" style="
+        const newImg = document.createElement('img');
+        newImg.src = 'https://yudha125.github.io/menu-widget/foreground/bank/' + newBankImages[index]; // Ubah path jika perlu
+        newImg.alt = newBankImages[index].replace('.gif', '');
+        newImg.width = 78;
+        newImg.height = 24;
 
-    //     ">
-    //         <h2>Tambahan</h2>
-    //         <p>Ini adalah konten tambahan yang ditambahkan ke halaman.</p>
-    //     </div>
-    // </div>
-    // `;
-
-    // sectionTop.forEach(function (section) {
-    //     section.appendChild(kontainerTambahan);
-    // });
+        item.appendChild(newImg); // Sisipkan gambar baru
+    });
 });
 
 window.addEventListener("scroll", function () {
