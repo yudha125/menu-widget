@@ -255,7 +255,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
 
-    Daftar nama bank sesuai urutan yang ingin ditampilkan
     const newBankImages = [
         'BCA.gif',
         'BNI.gif',
