@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
             wrapper.appendChild(navhead2);
             const frame = document.createElement("img");
             frame.id = "frame";
-            frame.src = "https://yudha125.github.io/menu-widget/foreground/frame3.png";
+            frame.src = "https://yudha125.github.io/menu-widget/foreground/frame3.webp";
             frame.style.position = "absolute";
             frame.style.top = "0";
             frame.style.left = "50%";
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Buat elemen frame atas
         const topFrame = document.createElement("div");
         topFrame.className = "container-img";
-        topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.png" alt="" style="width: 100%; height: 20px;">`;
+        topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.webp" alt="" style="width: 100%; height: 20px;">`;
         const bottomFrame = topFrame.cloneNode(true);
         latestResults.parentNode.insertBefore(topFrame, latestResults);
         latestResults.parentNode.insertBefore(bottomFrame, latestResults.nextSibling);
