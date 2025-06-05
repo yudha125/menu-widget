@@ -208,6 +208,11 @@ section .container {
     .results {
     height: 263px;
 }
+#result-slideshow {
+    max-height: 172px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
   `;
     document.head.appendChild(style);
 
