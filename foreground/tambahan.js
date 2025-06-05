@@ -2,21 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const style = document.createElement("style");
     style.textContent = `
          body {
-        background-image: url('asas.jpg') !important;
+        background-image: url('https://yudha125.github.io/menu-widget/foreground/asas.jpg') !important;
         background-size: cover !important;
-        cursor: url('cursor64.png'), auto !important;
+        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64.png'), auto !important;
     }
 
     a {
-        cursor: url('cursor64tangan.png'), auto !important;
+        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64tangan.png'), auto !important;
     }
 
     div {
-        cursor: url('cursor64.png'), auto;
+        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64.png'), auto;
     }
 
     button {
-        cursor: url('cursor64tangan.png'), auto !important;
+        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64tangan.png'), auto !important;
     }
 
     .navbar-header .navbar-collapse.collapse {}
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.parentNode.insertBefore(wrapper, img);
             wrapper.appendChild(img);
             const frame = document.createElement("img");
-            frame.src = "aaaaaaaa.png";
+            frame.src = "https://yudha125.github.io/menu-widget/foreground/aaaaaaaa.png";
             frame.style.position = "absolute";
             frame.style.top = "0";
             frame.style.left = "0";
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
     bannerDiv.className = 'custom-banner';
     bannerDiv.style.margin = '20px 0';
     bannerDiv.innerHTML = `
-    <img src="giftpanjang.gif" alt="Banner Iklan" style="width:100%; max-width:840px; display:block; margin:0 auto;">
+    <img src="https://yudha125.github.io/menu-widget/foreground/giftpanjang.gif" alt="Banner Iklan" style="width:100%; max-width:840px; display:block; margin:0 auto;">
     `;
 
     // Cari parent container
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.parentNode.insertBefore(wrapper, img);
             wrapper.appendChild(img);
             const frame = document.createElement("img");
-            frame.src = "frame5.png";
+            frame.src = "https://yudha125.github.io/menu-widget/foreground/frame5.png";
             frame.style.position = "absolute";
             frame.style.top = "0";
             frame.style.left = "0";
@@ -258,13 +258,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // Buat elemen frame atas
         const topFrame = document.createElement("div");
         topFrame.className = "container-img";
-        topFrame.innerHTML = `<img src="border.png" alt="" style="width: 100%; height: 20px;">`;
+        topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.png" alt="" style="width: 100%; height: 20px;">`;
         const bottomFrame = topFrame.cloneNode(true);
         latestResults.parentNode.insertBefore(topFrame, latestResults);
         latestResults.parentNode.insertBefore(bottomFrame, latestResults.nextSibling);
     }
     const imgSisi1 = document.createElement('img');
-    imgSisi1.src = 'sisi.png'; // Ganti dengan path gambar kamu
+    imgSisi1.src = 'https://yudha125.github.io/menu-widget/foreground/sisi.png'; // Ganti dengan path gambar kamu
     imgSisi1.alt = 'Floating Banner';
     imgSisi1.id = 'floating-banner2'; // Tambahkan ID untuk styling jika diperlukan
 
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.appendChild(imgSisi1);
     const imgSisi2 = document.createElement('img');
-    imgSisi2.src = 'sisi.png'; // Ganti dengan path gambar kamu
+    imgSisi2.src = 'https://yudha125.github.io/menu-widget/foreground/sisi.png'; // Ganti dengan path gambar kamu
     imgSisi2.alt = 'Floating Banner';
     imgSisi2.id = 'floating-banner2'; // Tambahkan ID untuk styling jika diperlukan
 
