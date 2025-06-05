@@ -213,6 +213,9 @@ section .container {
     overflow-y: auto; 
     overflow-x: hidden; 
 }
+.container-img.bottom-frame{
+margin-top:-10px;
+}
   `;
     document.head.appendChild(style);
 
@@ -284,19 +287,20 @@ section .container {
         }
     });
 
-    const latestResults = document.getElementById("latest-results");
+   const latestResults = document.getElementById("latest-results");
     if (latestResults) {
         // Buat elemen frame atas
         const topFrame = document.createElement("div");
         topFrame.className = "container-img";
         topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.webp" alt="" style="width: 100%; height: 20px;">`;
         const bottomFrame = topFrame.cloneNode(true);
+        topFrame.className = "container-img top-frame";
         latestResults.parentNode.insertBefore(topFrame, latestResults);
+        topFrame.className = "container-img bottom-frame";
         latestResults.parentNode.insertBefore(bottomFrame, latestResults.nextSibling);
     }
 
     const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
-
     const newBankImages = [
         'BCA.gif',
         'BNI.gif',
@@ -307,7 +311,6 @@ section .container {
         'OVO.gif',
         'PULSA.gif'
     ];
-
     bankImages.forEach((item, index) => {
         const oldImg = item.querySelector('img');
         if (oldImg) oldImg.remove(); // Hapus gambar lama jika ada
