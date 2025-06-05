@@ -213,8 +213,8 @@ section .container {
     overflow-y: auto; 
     overflow-x: hidden; 
 }
-.container-img.bottom-frame{
-margin-top:-10px;
+.container-img-bottom-frame{
+margin-top:-20px;
 }
   `;
     document.head.appendChild(style);
