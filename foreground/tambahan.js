@@ -293,15 +293,18 @@ margin-top:-10px;
     if (latestResults) {
         // Buat elemen frame atas
         const topFrame = document.createElement("div");
-        topFrame.className = "container-img";
         topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.webp" alt="border banner" style="width: 100%; height: 20px;">`;
+        topFrame.className = "container-img-top-frame";
+    
+        // Clone elemen frame atas untuk dijadikan bottom frame
         const bottomFrame = topFrame.cloneNode(true);
+        bottomFrame.className = "container-img-bottom-frame"; // <- class ini diberikan ke bottomFrame
+    
+        // Sisipkan ke DOM
         latestResults.parentNode.insertBefore(topFrame, latestResults);
-        topFrame.className = "container-img top-frame";
         latestResults.parentNode.insertBefore(bottomFrame, latestResults.nextSibling);
-        topFrame.className = "container-img bottom-frame";
     }
-
+    
     const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
     const newBankImages = [
         'BCA.gif',
