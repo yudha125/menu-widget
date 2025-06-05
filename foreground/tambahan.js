@@ -2,154 +2,196 @@ document.addEventListener("DOMContentLoaded", function () {
     const style = document.createElement("style");
     style.textContent = `
          body {
-        background-image: url('https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp') !important;
-        background-size: cover !important;
+    background-image: url('https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp') !important;
+    background-size: cover !important;
+}
+
+.navbar-header .navbar-collapse.collapse {}
+
+.news-head {
+    background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%) !important;
+
+}
+
+.news-body {
+    background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%) !important;
+}
+
+.btn-theme.login {
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
+    color: white !important;
+}
+
+ul.nav.menu.sidebar-nav li a {
+    list-style-type: none !important;
+    border-bottom: none !important;
+}
+
+ul.nav.menu.sidebar-nav li a {
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
+    color: white !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    text-decoration: none !important;
+    margin: 5px 0px 5px 0px !important;
+    font-family: Lato, Arial, sans-serif !important;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.719);
+}
+
+ul.nav.menu.sidebar-nav li a:hover {
+    background: linear-gradient(0deg, rgb(2, 54, 97) 0%, rgb(6, 6, 14) 50%, rgb(54, 63, 85) 100%);
+    font-weight: bold !important;
+}
+
+#slider {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#latest-results {
+    margin-top: 5px !important;
+    margin-bottom: 0px;
+}
+
+#latest-result .sidebar-button {
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    color: white !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+
+}
+
+.sidebar-button .btn.btn-theme {
+    font-family: Lato, Arial, sans-serif;
+    text-transform: uppercase;
+    height: 50px !important;
+    width: 100% !important;
+    --border-radius: 4px;
+    border-radius: 20px !important;
+    --border-width: 5px;
+    appearance: none;
+    position: relative;
+    border: 0;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.sidebar-button .btn.btn-theme:hover::after {
+    animation-play-state: paused;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0, -2px, 0);
+}
+
+.sidebar-button .btn.btn-theme::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(#45f07e,
+            #17ee04,
+            #55ff12,
+            rgb(75, 255, 59),
+            rgb(34, 255, 5),
+            #2eff4a,
+            #14eb00);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 1000ms infinite;
+    animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
     }
-    .navbar-header .navbar-collapse.collapse {}
+}
 
-    .news-head {
-        background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%) !important;
+section .container {
+    background: rgb(0, 0, 0, 1) !important;
+}
 
-    }
+.navbar-fixed-top {
+    background: rgba(0, 0, 0, 0) !important;
+}
 
-    .news-body {
-        background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%) !important;
-    }
+.navbar-fixed-top .container {
+    background: rgba(0, 0, 0, 0) !important;
 
-    .btn-theme.login {
-        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
-        color: white !important;
-    }
+}
 
-    ul.nav.menu.sidebar-nav li a {
-        list-style-type: none !important;
-        border-bottom: none !important;
-    }
+#liscroll {
+    margin: 5px 0px 5px 0px !important;
+}
 
-    ul.nav.menu.sidebar-nav li a {
-        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
-        color: white !important;
-        border-radius: 10px !important;
-        padding: 10px !important;
-        text-decoration: none !important;
-        margin: 5px 0px 5px 0px !important;
-        font-family: Lato, Arial, sans-serif !important;
-        box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.719);
-    }
+.results {
+    background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%) !important;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.719) !important;
+}
 
-    ul.nav.menu.sidebar-nav li a:hover {
-        background: linear-gradient(0deg, rgb(2, 54, 97) 0%, rgb(6, 6, 14) 50%, rgb(54, 63, 85) 100%);
-        font-weight: bold !important;
-    }
 
-    #slider {
-        margin-top: 15px;
-        margin-bottom: 10px;
-    }
 
-    #latest-results {
-        margin-top: 5px !important;
-        margin-bottom: 0px;
-    }
+.item.bank {
+    position: relative;
+    /* background-image: url('https://yudha125.github.io/menu-widget/foreground/bank/GOPAY.gif');
+    background-size: 170px 90px;
+    background-position: center;
+    background-repeat: no-repeat; */
+    height: 90px;
+    border: none;
+    background-color: rgba(250, 250, 250, 0);
 
-    #latest-result .sidebar-button {
-        align-items: center;
-        justify-content: center;
-        width: 100% !important;
-        height: 100% !important;
-        padding: 0px !important;
-        color: white !important;
-        border-radius: 4px !important;
-        text-decoration: none !important;
+}
 
-    }
+.item.bank .online {
+    position: absolute;
+    z-index: 10;
+    /* top: 50%; */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-    .sidebar-button .btn.btn-theme {
-        font-family: Lato, Arial, sans-serif;
-        text-transform: uppercase;
-        height: 50px !important;
-        width: 100% !important;
-        --border-radius: 4px;
-        border-radius: 20px !important;
-        --border-width: 5px;
-        appearance: none;
-        position: relative;
-        border: 0;
-        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
-        font-size: 18px;
-        font-weight: 200;
-        color: #fff;
-        z-index: 2;
-        border-radius: 5px;
-    }
+}
 
-    .sidebar-button .btn.btn-theme:hover::after {
-        animation-play-state: paused;
-        box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
-        transform: translate3d(0, -2px, 0);
-    }
+.item.bank .offline {
+    position: absolute;
+    z-index: 10;
+    /* top: 50%; */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-    .sidebar-button .btn.btn-theme::after {
-        --m-i: linear-gradient(#000, #000);
-        --m-o: content-box, padding-box;
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        padding: var(--border-width);
-        border-radius: var(--border-radius);
-        background-image: conic-gradient(#45f07e,
-                #17ee04,
-                #55ff12,
-                rgb(75, 255, 59),
-                rgb(34, 255, 5),
-                #2eff4a,
-                #14eb00);
-        -webkit-mask-image: var(--m-i), var(--m-i);
-        mask-image: var(--m-i), var(--m-i);
-        -webkit-mask-origin: var(--m-o);
-        mask-origin: var(--m-o);
-        -webkit-mask-clip: var(--m-o);
-        mask-composite: exclude;
-        -webkit-mask-composite: destination-out;
-        filter: hue-rotate(0);
-        animation: rotate-hue linear 1000ms infinite;
-        animation-play-state: running;
-    }
-
-    @keyframes rotate-hue {
-        to {
-            filter: hue-rotate(1turn);
-        }
-    }
-
-    section .container {
-        background: rgb(0, 0, 0, 1) !important;
-    }
-
-    .navbar-fixed-top {
-        background: rgba(0, 0, 0, 0) !important;
-    }
-
-    .navbar-fixed-top .container {
-        background: rgba(0, 0, 0, 0) !important;
-
-    }
-
-    #liscroll {
-        margin: 5px 0px 5px 0px !important;
-    }
-
-    .results {
-        background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%) !important;
-        box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.719) !important;
-    }
-    .bank{
-        background:#054D80;
-    }
+.item.bank img {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    box-shadow: -2px 2px 5px rgba(4, 233, 15, 0.719);
+}
   `;
     document.head.appendChild(style);
 
