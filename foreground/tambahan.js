@@ -281,9 +281,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll('#latest-results .owl-carousel .item.slides');
     const newImages = [
         "12D.png", "24D.png", "billiard.png", "cambodia.png", "fatpanda.png", "gongball.png",
-        "habanero.png", "hkpools.png", "idnslot.png", "kingkong.png", "microgaming.png", "oglok.png",
-        "pgsoft.png", "playstar.png", "pokerdice.png", "PP.png", "redwhite.png", "singapurpools.png",
-        "suwit.png", "sydneypools.png", "toptrend.png", "totomacau.png"
+        "habanero.png", "hkpools.png", "idnslot.png", "kingkong.webp", "microgaming.png", "oglok.png",
+        "pgsoft.png", "playstar.png", "pokerdice.png", "PP.png", "redwhite.png", "singapurpools.webp",
+        "suwit.png", "sydneypools.webp", "toptrend.png", "totomacau.webp"
     ];
 
     // Hapus elemen setelah ke-22
