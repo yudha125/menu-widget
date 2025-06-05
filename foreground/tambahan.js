@@ -216,6 +216,9 @@ section .container {
 .container-img-bottom-frame{
 margin-top:-20px;
 }
+.owl-theme.bankscroll{
+    margin-top:-40px;
+}
   `;
     document.head.appendChild(style);
 
