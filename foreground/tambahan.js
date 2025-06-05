@@ -242,6 +242,7 @@ margin-top:-10px;
             frame.style.pointerEvents = "none";
             frame.style.zIndex = "-1";
             frame.classList.add("skrollable");
+            frame.alt="Header-fixed";
 
             wrapper.appendChild(frame);
         }
@@ -283,6 +284,7 @@ margin-top:-10px;
             frame.style.width = "100%";
             frame.style.height = "100%";
             frame.style.pointerEvents = "none";
+            frame.alt="frame-iklan";
             wrapper.appendChild(frame);
         }
     });
@@ -292,12 +294,12 @@ margin-top:-10px;
         // Buat elemen frame atas
         const topFrame = document.createElement("div");
         topFrame.className = "container-img";
-        topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.webp" alt="" style="width: 100%; height: 20px;">`;
+        topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.webp" alt="border banner" style="width: 100%; height: 20px;">`;
         const bottomFrame = topFrame.cloneNode(true);
-        topFrame.className = "container-img top-frame";
         latestResults.parentNode.insertBefore(topFrame, latestResults);
-        topFrame.className = "container-img bottom-frame";
+        topFrame.className = "container-img top-frame";
         latestResults.parentNode.insertBefore(bottomFrame, latestResults.nextSibling);
+        topFrame.className = "container-img bottom-frame";
     }
 
     const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
