@@ -314,10 +314,10 @@ section .container {
     });
     const items = document.querySelectorAll('#latest-results .owl-carousel .item.slides');
     const newImages = [
-        "12D.png", "24D.png", "billiard.png", "cambodia.png", "fatpanda.png", "gongball.png",
-        "habanero.png", "hkpools.png", "idnslot.png", "kingkong.webp", "microgaming.png", "oglok.png",
-        "pgsoft.png", "playstar.png", "pokerdice.png", "PP.png", "redwhite.png", "singapurpools.webp",
-        "suwit.png", "sydneypools.webp", "toptrend.png", "totomacau.webp"
+        "12D.webp", "24D.webp", "billiard.webp", "cambodia.webp", "fatpanda.webp", "gongball.webp",
+        "habanero.webp", "hongkong.webp", "idnslot.webp", "kingkong.webp", "microgaming.webp", "oglok.webp",
+        "pgsoft.webp", "playstar.webp", "pokerdice.webp", "pragmatic.webp", "redwhite.webp", "singapurpools.webp",
+        "suwit.webp", "sydneypools.webp", "toptrend.webp", "totomacau.webp"
     ];
 
     // Hapus elemen setelah ke-22
