@@ -201,6 +201,10 @@ section .container {
     margin-top: auto;
     margin-bottom: auto;
 }
+.results-number{
+    padding: 2px;
+    font-size: 0.6vh;
+    }
   `;
     document.head.appendChild(style);
 
