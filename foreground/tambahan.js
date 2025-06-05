@@ -290,6 +290,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
         item.appendChild(newImg); // Sisipkan gambar baru
     });
+    const items = document.querySelectorAll('#latest-results .owl-carousel .item.slides');
+    const newImages = [
+        "12D.png", "24D.png", "billiard.png", "cambodia.png", "fatpanda.png", "gongball.png",
+        "habanero.png", "hkpools.png", "idnslot.png", "kingkong.png", "microgaming.png", "oglok.png",
+        "pgsoft.png", "playstar.png", "pokerdice.png", "PP.png", "redwhite.png", "singapurpools.png",
+        "suwit.png", "sydneypools.png", "toptrend.png", "totomacau.png"
+    ];
+
+    // Hapus elemen setelah ke-22
+    for (let i = 22; i < items.length; i++) {
+        items[i].remove();
+    }
+
+    // Ganti src pada 22 gambar pertama
+    for (let i = 0; i < newImages.length && i < items.length; i++) {
+        const img = items[i].querySelector('img');
+        if (img) {
+            img.src = "https://yudha125.github.io/menu-widget/foreground/sliderEx/" + newImages[i];
+        }
+    }
 });
 
 window.addEventListener("scroll", function () {
