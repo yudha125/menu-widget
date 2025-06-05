@@ -35,7 +35,7 @@ ul.nav.menu.sidebar-nav li a {
     text-decoration: none !important;
     margin: 5px 0px 5px 0px !important;
     font-family: Lato, Arial, sans-serif !important;
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.719);
+    box-shadow: 4px 4px 10px rgba(26, 229, 243, 0.9);
 }
 
 ul.nav.menu.sidebar-nav li a:hover {
@@ -146,7 +146,7 @@ section .container {
 
 .results {
     background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%) !important;
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.719) !important;
+    box-shadow: 4px 4px 10px rgba(26, 229, 243, 0.919) !important;
 }
 
 
@@ -190,31 +190,19 @@ section .container {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
-    box-shadow: -2px 2px 5px rgba(4, 233, 15, 0.719);
+    box-shadow: -2px 2px 5px rgba(26, 229, 243, 1);
+}
+
+.container-img {
+    margin-top: auto;
+}
+
+.item.slides {
+    margin-top: auto;
+    margin-bottom: auto;
 }
   `;
     document.head.appendChild(style);
-
-    const slideItems = document.querySelectorAll(".item.slides");
-    slideItems.forEach(function (item) {
-        const img = item.querySelector("img");
-        if (img) {
-            const wrapper = document.createElement("div");
-            wrapper.style.position = "relative";
-            wrapper.style.display = "inline-block";
-            img.parentNode.insertBefore(wrapper, img);
-            wrapper.appendChild(img);
-            const frame = document.createElement("img");
-            frame.src = "https://yudha125.github.io/menu-widget/foreground/aaaaaaaa.png";
-            frame.style.position = "absolute";
-            frame.style.top = "0";
-            frame.style.left = "0";
-            frame.style.width = "100%";
-            frame.style.height = "100%";
-            frame.style.pointerEvents = "none";
-            wrapper.appendChild(frame);
-        }
-    });
 
     const navItem = document.querySelectorAll(".navbar-fixed-top .container");
     navItem.forEach(function (item) {
