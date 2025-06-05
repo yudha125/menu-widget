@@ -4,21 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
          body {
         background-image: url('https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp') !important;
         background-size: cover !important;
-        cursor: url('cursor64.png'), auto !important;
     }
-
-    a {
-        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64tangan.png'), auto !important;
-    }
-
-    div {
-        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64.png'), auto;
-    }
-
-    button {
-        cursor: url('https://yudha125.github.io/menu-widget/foreground/cursor64tangan.png'), auto !important;
-    }
-
     .navbar-header .navbar-collapse.collapse {}
 
     .news-head {
@@ -242,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.parentNode.insertBefore(wrapper, img);
             wrapper.appendChild(img);
             const frame = document.createElement("img");
-            frame.src = "https://yudha125.github.io/menu-widget/foreground/frame5.png";
+            frame.src = "https://yudha125.github.io/menu-widget/foreground/frame5.webp";
             frame.style.position = "absolute";
             frame.style.top = "0";
             frame.style.left = "0";
