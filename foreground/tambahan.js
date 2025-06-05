@@ -203,7 +203,7 @@ section .container {
 }
 .results-number{
     padding: 2px;
-    font-size: 0.6vh;
+    font-size: 13px !important;
     }
   `;
     document.head.appendChild(style);
