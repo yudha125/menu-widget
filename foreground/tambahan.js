@@ -205,6 +205,9 @@ section .container {
     padding: 2px;
     font-size: 13px !important;
     }
+    .results {
+    height: 263px;
+}
   `;
     document.head.appendChild(style);
 
