@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
             wrapper.appendChild(navhead2);
             const frame = document.createElement("img");
             frame.id = "frame";
-            frame.src = "frame3.png";
+            frame.src = "https://yudha125.github.io/menu-widget/foreground/frame3.png";
             frame.style.position = "absolute";
             frame.style.top = "0";
             frame.style.left = "50%";
