@@ -147,6 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
         background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%) !important;
         box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.719) !important;
     }
+    .bank{
+        background:#054D80;
+    }
   `;
     document.head.appendChild(style);
 
@@ -252,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
 
-    // Daftar nama bank sesuai urutan yang ingin ditampilkan
+    Daftar nama bank sesuai urutan yang ingin ditampilkan
     const newBankImages = [
         'BCA.gif',
         'BNI.gif',
