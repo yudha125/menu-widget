@@ -235,6 +235,7 @@ margin-top:-20px;
     border-radius:25px;
     text-align:center;
     align-items:center;
+    justify-content:center;
     
 }
 
