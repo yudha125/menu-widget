@@ -239,8 +239,16 @@ margin-top:-20px;
     
 }
 
+#setuju.btn.btn-theme{
 
+}
+div.row-legend.text-center .btn.btn-theme{
+min-width: 180px;
+margin-top:50px;
+}
+@media only screen and (max-width: 600px){
 
+}
 
   `;
     document.head.appendChild(style);
