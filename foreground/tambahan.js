@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
          body {
     background-image: url('https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp') !important;
     background-size: cover !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .navbar-header .navbar-collapse.collapse {}
