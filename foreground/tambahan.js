@@ -219,6 +219,16 @@ margin-top:-20px;
 .owl-theme.bankscroll{
     margin-top:-40px;
 }
+.modal-header .close span::before {
+    content: "Close";
+    /* atau content: "\2716"; untuk ✖ simbol */
+    font-size: 16px;
+    color: red;
+}
+
+.modal-header .close {
+    background-color: rgb(18, 166, 172, 0.8);
+}
   `;
     document.head.appendChild(style);
 
