@@ -227,9 +227,10 @@ margin-top:-20px;
 
 .modal-header .close {
     background-color: rgb(18, 166, 172, 1);
+    opacity: 1 !important;
     width:35px;
     height:35px;
-    border-radius:25%;
+    border-radius:25px;
     text-align:center;
     
 }
