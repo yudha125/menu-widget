@@ -221,7 +221,6 @@ margin-top:-20px;
 }
 .modal-header .close span::before {
     content: "Close";
-    /* atau content: "\2716"; untuk ✖ simbol */
     font-size: 16px;
     color: red;
 }
