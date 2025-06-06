@@ -220,15 +220,15 @@ margin-top:-20px;
     margin-top:-40px;
 }
 .modal-header .close span {
-     font-size:20px;
+     font-size:30px;
      color:red;
      font-weight:bold;
 }
 
 .modal-header .close {
-    background-color: rgb(18, 166, 172, 0.8);
-    width:25px;
-    height:25px;
+    background-color: rgb(18, 166, 172, 1);
+    width:35px;
+    height:35px;
     border-radius:25%;
     text-align:center;
     
