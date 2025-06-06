@@ -227,22 +227,17 @@ margin-top:-20px;
 
 .modal-header .close {
     background-color: rgb(18, 166, 172, 0.8);
-    width:15px;
-    height:15px;
+    width:25px;
+    height:25px;
     border-radius:25%;
     text-align:center;
     
 }
 
-.modal-content {
-    position: fixed !important;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999; /* pastikan lebih tinggi dari elemen lain */
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(16, 166, 192, 0.836);
 }
+
+
+
 
   `;
     document.head.appendChild(style);
