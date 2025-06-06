@@ -223,18 +223,19 @@ margin-top:-20px;
      font-size:30px;
      color:red;
      font-weight:bold;
+     margin:auto;
 }
 
 .modal-header .close {
+    display:flex;
     background-color: rgb(18, 166, 172, 1);
     opacity: 1 !important;
     width:35px;
     height:35px;
     border-radius:25px;
     text-align:center;
+    align-items:center;
     
-}
-
 }
 
 
