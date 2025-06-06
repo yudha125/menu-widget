@@ -223,24 +223,25 @@ margin-top:-20px;
 .owl-theme.bankscroll{
     margin-top:-40px;
 }
-.modal-header .close span {
-     font-size:30px;
-     color:red;
-     font-weight:bold;
-     margin:auto;
+.modal-header .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 166, 172, 1);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* Lebih rapi pakai 50% daripada 25px */
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    opacity: 1 !important;
 }
 
-.modal-header .close {
-    display:flex;
-    background-color: rgb(18, 166, 172, 1);
-    opacity: 1 !important;
-    width:35px;
-    height:35px;
-    border-radius:25px;
-    text-align:center;
-    align-items:center;
-    justify-content:center;
-    
+.modal-header .close span {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    line-height: 1; /* Tambahan ini membantu agar vertikal pas */
 }
 
 #setuju.btn.btn-theme{
