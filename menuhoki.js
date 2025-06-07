@@ -47,7 +47,7 @@
     const actions = [
         { href: 'https://t.me/HOKI777_OFFICIAL', img: 'https://yudha125.github.io/menu-widget/Image/tele.gif' },
         { href: 'https://t.ly/rtp-hoki777/', img: 'https://yudha125.github.io/menu-widget/Image/rtp.gif' },
-        { href: 'https://api.whatsapp.com/send/?phone=85578896182&text&type=phone_number&app_absent=0', img: 'https://yudha125.github.io/menu-widget/Image/wa.gif' },
+        { href: 'https://api.whatsapp.com/send/?phone=855764526797&text&type=phone_number&app_absent=0', img: 'https://yudha125.github.io/menu-widget/Image/wa.gif' },
         { href: 'https://www.facebook.com/groups/officialgruphoki777/', img: 'https://yudha125.github.io/menu-widget/Image/fb.gif' }
     ];
 
