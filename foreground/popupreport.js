@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 1000001;
+        z-index: 10001;
         width: 100%;
         height: 100%;
         background-image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     #formReport {
-        z-index:1000003;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -96,13 +95,13 @@ document.addEventListener("DOMContentLoaded", function () {
         padding: 20px;
     }
 
-    #formReport .input-group {
+    #formReport .input-group-abunawas {
         display: flex;
         align-items: stretch;
         width: 100%;
     }
 
-    #formReport .input-group-text {
+    #formReport .input-group-abunawas-text {
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100% 100%);
         color: #ffffff;
         font-weight: bold;
@@ -114,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
         min-width: 45px;
     }
 
-    #formReport .form-control,
+    #formReport .form-control-abunawas,
     #formReport .form-select,
     #formReport textarea {
         border: 1px solid #ccc;
@@ -129,11 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
         min-height: 120px;
     }
 
-    #formReport .input-group input[type="file"] {
+    #formReport .input-group-abunawas input[type="file"] {
         border-radius: 6px 0 0 6px;
     }
 
-    #formReport .input-group label.input-group-text {
+    #formReport .input-group-abunawas label.input-group-abunawas-text {
         border-radius: 0 6px 6px 0;
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100% 100%);
         font-weight: bold;
@@ -173,12 +172,12 @@ document.addEventListener("DOMContentLoaded", function () {
             padding: 15px;
         }
 
-        #formReport .input-group-text {
+        #formReport .input-group-abunawas-text {
             font-size: 12px;
             padding: 8px;
         }
 
-        #formReport .form-control,
+        #formReport .form-control-abunawas,
         #formReport .form-select {
             font-size: 13px;
         }
@@ -208,47 +207,47 @@ document.addEventListener("DOMContentLoaded", function () {
                     </marquee>
                 </div>
 
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fas fa-user"></i></span>
-                    <input type="text" placeholder="Username" name="username" id="username">
+                <div class="input-group-abunawas">
+                    <span class="input-group-abunawas-text"><i class="fas fa-user"></i></span>
+                    <input type="text" placeholder="Username" class="form-control-abunawas" name="username" id="username">
                 </div>
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fab fa-whatsapp"></i></span>
+                <div class="input-group-abunawas">
+                    <span class="input-group-abunawas-text"><i class="fab fa-whatsapp"></i></span>
                     <input type="text" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')"
-                        placeholder="Nomor WA aktif (cth: 0812364896)" name="wa" id="wa">
+                        placeholder="Nomor WA aktif (cth: 0812364896)" class="form-control-abunawas" name="wa" id="wa">
                 </div>
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fas fa-calendar-week"></i></span>
+                <div class="input-group-abunawas">
+                    <span class="input-group-abunawas-text"><i class="fas fa-calendar-week"></i></span>
                     <input type="text" placeholder="Tanggal Kendala"
-                        onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" name="tanggalkendala"
+                        onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" class="form-control-abunawas" name="tanggalkendala"
                         id="dateresult">
                 </div>
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fas fa-exclamation-triangle"></i></span>
-                    <input type="text" placeholder="Kendala" name="kendala" id="kendala">
+                <div class="input-group-abunawas">
+                    <span class="input-group-abunawas-text"><i class="fas fa-exclamation-triangle"></i></span>
+                    <input type="text" placeholder="Kendala" class="form-control-abunawas" name="kendala" id="kendala">
                 </div>
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fas fa-globe"></i></span>
-                    <select name="bokendala" class="form-select-report" aria-label="Default select example">
+                <div class="input-group-abunawas">
+                    <span class="input-group-abunawas-text"><i class="fas fa-globe"></i></span>
+                    <select name="bokendala" class="form-select text-capitalize" aria-label="Default select example">
                         <option value="">Pilih Situs BO</option>
                         <option value="tototarot">TOTOTAROT</option>
                     </select>
                 </div>
-                <div style="height:150px;" class="input-group">
-                    <span class="input-group-text"><i class="fas fa-comments"></i></span>
-                    <textarea id="isipesan" name="isipesan"></textarea>
+                <div style="height:150px;" class="input-group-abunawas">
+                    <span class="input-group-abunawas-text"><i class="fas fa-comments"></i></span>
+                    <textarea class="form-control-abunawas" id="isipesan" name="isipesan"></textarea>
                 </div>
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fas fa-vote-yea"></i></span>
+                <div class="input-group-abunawas">
+                    <span class="input-group-abunawas-text"><i class="fas fa-vote-yea"></i></span>
                     <select name="saran" id="saran" class="form-select">
                         <option value="normal">Normal</option>
                         <option value="sedang">Sedang</option>
                         <option value="tinggi">Tinggi</option>
                     </select>
                 </div>
-                <div class="input-group">
-                    <input type="file" name="uploadfile" id="gambar">
-                    <label class="input-group-text" for="gambar"><i class="fas fa-image"></i></label>
+                <div class="input-group-abunawas">
+                    <input type="file" class="form-control-abunawas" name="uploadfile" id="gambar">
+                    <label class="input-group-abunawas-text" for="gambar"><i class="fas fa-image"></i></label>
                 </div>
                 <div class="card-footer">
                     <div class="d-grid">
