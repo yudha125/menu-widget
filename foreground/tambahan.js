@@ -1,6 +1,208 @@
 document.addEventListener("DOMContentLoaded", function () {
     const style = document.createElement("style");
     style.textContent = `
+    .button-main.button-absolute {
+        height: 45px;
+        width: 200px;
+        border-radius: 10px 10px 0px 0px;
+        font-size: 16px;
+        border: none;
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100% 100%);
+        color: white;
+        font-weight: bold;
+        position: fixed;
+        bottom: 0;
+        left: 5%;
+        z-index: 10000;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .button-main.button-absolute:hover {
+        background: linear-gradient(179deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 27%, rgba(22, 93, 107, 1) 100%);
+        color: white;
+    }
+
+    .icon-button {
+        font-size: 20px;
+    }
+
+    .popup-report {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10001;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .popup-report.open {
+        display: block;
+    }
+
+    .popup-report .popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 4px 4px 8px rgb(15, 177, 177);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popup-report .close-popup {
+        position: absolute;
+        top: -30px;
+        right: -20px;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100% 100%);
+        padding: 5px 10px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+    .popup-report .info-status-report {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 17px;
+        color: rgb(7, 64, 82);
+        font-weight: bold;
+        text-align: center;
+        background-color: aquamarine;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .popup-report .popup-content .logo {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+
+    }
+
+    .popup-report .popup-content .logo img {
+        width: 300px;
+        height: auto;
+
+    }
+
+
+
+    #formReport {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    #formReport .input-group {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    #formReport .input-group-text {
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100% 100%);
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 6px 0 0 6px;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 45px;
+    }
+
+    #formReport .form-control,
+    #formReport .form-select,
+    #formReport textarea {
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        border-radius: 0 6px 6px 0;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #formReport textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    #formReport .input-group input[type="file"] {
+        border-radius: 6px 0 0 6px;
+    }
+
+    #formReport .input-group label.input-group-text {
+        border-radius: 0 6px 6px 0;
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100% 100%);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #formReport #text-berjalan {
+        background-color: rgba(0, 128, 128, 0.15);
+        padding: 8px 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    #formReport .closeteks {
+        position: absolute;
+        top: 4px;
+        right: 6px;
+        color: red;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #sendReport {
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100% 100%);
+        color: #ffffff;
+        font-weight: bold;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    @media (max-width: 600px) {
+        #formReport {
+            padding: 15px;
+        }
+
+        #formReport .input-group-text {
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        #formReport .form-control,
+        #formReport .form-select {
+            font-size: 13px;
+        }
+    }
          body {
     background-image: url('https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp') !important;
     background-size: cover !important;
@@ -281,7 +483,7 @@ margin-top:50px;
             frame.style.pointerEvents = "none";
             frame.style.zIndex = "-1";
             frame.classList.add("skrollable");
-            frame.alt="Header-fixed";
+            frame.alt = "Header-fixed";
 
             wrapper.appendChild(frame);
         }
@@ -323,27 +525,27 @@ margin-top:50px;
             frame.style.width = "100%";
             frame.style.height = "100%";
             frame.style.pointerEvents = "none";
-            frame.alt="frame-iklan";
+            frame.alt = "frame-iklan";
             wrapper.appendChild(frame);
         }
     });
 
-   const latestResults = document.getElementById("latest-results");
+    const latestResults = document.getElementById("latest-results");
     if (latestResults) {
         // Buat elemen frame atas
         const topFrame = document.createElement("div");
         topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.webp" alt="border banner" style="width: 100%; height: 20px;">`;
         topFrame.className = "container-img-top-frame";
-    
+
         // Clone elemen frame atas untuk dijadikan bottom frame
         const bottomFrame = topFrame.cloneNode(true);
         bottomFrame.className = "container-img-bottom-frame"; // <- class ini diberikan ke bottomFrame
-    
+
         // Sisipkan ke DOM
         latestResults.parentNode.insertBefore(topFrame, latestResults);
         latestResults.parentNode.insertBefore(bottomFrame, latestResults.nextSibling);
     }
-    
+
     const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
     const newBankImages = [
         'BCA.gif',
@@ -387,6 +589,92 @@ margin-top:50px;
             img.src = "https://yudha125.github.io/menu-widget/foreground/sliderEx/" + newImages[i];
         }
     }
+    const buttonMain = document.createElement("a");
+    buttonMain.className = "button-main button-absolute";
+    buttonMain.href = "#";
+    buttonMain.innerHTML = `☎️ Laporan Masalah`;
+
+    buttonMain.onclick = function () {
+        const popup = document.querySelector('.popup-report');
+        if (popup) popup.classList.add('open');
+    };
+
+    document.querySelector("body").appendChild(buttonMain);
+    const poprep = document.createElement("div");
+    poprep.className = "popup-report";
+    poprep.innerHTML = `
+    <div class="popup-content">
+        <div class="close-popup" onclick="this.parentElement.parentElement.classList.remove('open');">X</div>
+        <div class="info-status-report"></div>
+        <div class="logo">
+            <a href="https://tototarot.net/" target="_blank">
+                <img width="300" class="d-block mx-auto" src="https://tototarot.net/assets/img/cgn/logo.png"
+                    alt="logo keluhan">
+            </a>
+
+        </div>
+        <form id="formReport">
+
+            <div id="text-berjalan" class="position-relative" style="display: none;">
+                <i onclick="closeTeks()" class="fas fa-times-circle closeteks"></i>
+                <marquee class="teks-berjalan app-theme-text border-teks mb-2" scrollamount="4" direction="left">
+                    <span class="badge bg-danger">2025-01-11 15:40:50</span> []
+                </marquee>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <input type="text" placeholder="Username" class="form-control" name="username" id="username">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fab fa-whatsapp"></i></span>
+                <input type="text" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')"
+                    placeholder="Nomor WA aktif (cth: 0812364896)" class="form-control" name="wa" id="wa">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-calendar-week"></i></span>
+                <input type="text" placeholder="Tanggal Kendala"
+                    onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" class="form-control" name="tanggalkendala"
+                    id="dateresult">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-exclamation-triangle"></i></span>
+                <input type="text" placeholder="Kendala" class="form-control" name="kendala" id="kendala">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-globe"></i></span>
+                <select name="bokendala" class="form-select text-capitalize" aria-label="Default select example">
+                    <option value="">Pilih Situs BO</option>
+                    <option value="tototarot">TOTOTAROT</option>
+                </select>
+            </div>
+            <div style="height:150px;" class="input-group">
+                <span class="input-group-text"><i class="fas fa-comments"></i></span>
+                <textarea class="form-control" id="isipesan" name="isipesan"></textarea>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-vote-yea"></i></span>
+                <select name="saran" id="saran" class="form-select">
+                    <option value="normal">Normal</option>
+                    <option value="sedang">Sedang</option>
+                    <option value="tinggi">Tinggi</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="file" class="form-control" name="uploadfile" id="gambar">
+                <label class="input-group-text" for="gambar"><i class="fas fa-image"></i></label>
+            </div>
+            <div class="card-footer">
+                <div class="d-grid">
+                    <button type="submit" id="sendReport" class="button-send-report">Kirim</button>
+                </div>
+            </div>
+            <input type="hidden" name="secure_token" value="abc123secure">
+        </form>
+    </div>
+    `;
+    const body = document.querySelector("body");
+    body.appendChild(poprep);
 });
 
 window.addEventListener("scroll", function () {
@@ -403,3 +691,48 @@ window.addEventListener("scroll", function () {
         frame.style.top = "-3px";
     }
 });
+
+document.getElementById('formReport').addEventListener('submit', function (e) {
+    e.preventDefault(); // Biar tidak reload
+
+    const form = document.getElementById('formReport');
+    const formData = new FormData(form);
+    const statusBox = document.querySelector('.info-status-report');
+
+    // Tampilkan status: loading
+    statusBox.innerText = '⏳ Mengirim laporan...';
+    statusBox.style.display = 'block';
+
+    fetch('https://pokhok.info/rpt/rpt.php', {
+        method: 'POST',
+        body: formData
+    })
+        .then(res => res.text())
+        .then(response => {
+            statusBox.innerText = '✅ Laporan berhasil dikirim!';
+
+            // Sembunyikan setelah 5 detik
+            setTimeout(() => {
+                statusBox.style.display = 'none';
+            }, 5000);
+
+            // Opsional: reset form
+            form.reset();
+        })
+        .catch(error => {
+            statusBox.innerText = '❌ Gagal mengirim laporan. Coba lagi!';
+
+            // Sembunyikan setelah 5 detik
+            setTimeout(() => {
+                statusBox.style.display = 'none';
+            }, 5000);
+        });
+});
+
+function openreport() {
+    const elemen = document.querySelector(".popup-report");
+    if (elemen) {
+        elemen.classList.add("open");
+    }
+}
+
