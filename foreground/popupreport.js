@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `
     document.head.appendChild(style);
     const popupreport = document.createElement("div");
-    popupreport.className = "popup-report";
+    popupreport.className = "popup-report open";
     popupreport.id = "popupreport";
     popupreport.innerHTML = `
         <div class="popup-content">
@@ -239,10 +239,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         <option value="tinggi">Tinggi</option>
                     </select>
                 </div>
+
                 <div class="input-group-abunawas">
                     <input type="file" class="form-control-abunawas" name="uploadfile" id="gambar">
                     <label class="input-group-abunawas-text" for="gambar"><i class="fas fa-image"></i></label>
                 </div>
+                <input type="hidden" name="secure_token" value="abc123secure">
                 <div class="card-footer">
                     <div class="d-grid">
                         <button type="submit" id="sendReport" class="button-send-report">Kirim</button>
