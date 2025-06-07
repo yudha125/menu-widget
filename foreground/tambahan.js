@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         position: fixed;
         bottom: 0;
         left: 5%;
-        z-index: 10000;
+        z-index: 100000;
         text-decoration: none;
         text-align: center;
         display: flex;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 10001;
+        z-index: 100001;
         width: 100%;
         height: 100%;
         background-image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
@@ -339,6 +339,7 @@ section .container {
 
 .navbar-fixed-top {
     background: rgba(0, 0, 0, 0) !important;
+    z-index: 1000 !important;
 }
 
 .navbar-fixed-top .container {
@@ -605,8 +606,10 @@ margin-top:50px;
     document.querySelector("body").appendChild(buttonMain);
     const poprep = document.createElement("div");
     poprep.className = "popup-report";
+    poprep.style.display = "none"; // Awalnya sembunyikan popup
+    poprep.style.zIndex = "100004"; // Pastikan popup di atas elemen lain
     poprep.innerHTML = `
-    <div class="popup-content">
+    <div class="popup-content" style="z-index:100005;">
         <div class="close-popup" onclick="this.parentElement.parentElement.classList.remove('open');">X</div>
         <div class="info-status-report"></div>
         <div class="logo">
@@ -616,7 +619,7 @@ margin-top:50px;
             </a>
 
         </div>
-        <form id="formReport">
+        <form id="formReport" style="z-index:10004;">
 
             <div id="text-berjalan" class="position-relative" style="display: none;">
                 <i onclick="closeTeks()" class="fas fa-times-circle closeteks"></i>
@@ -627,33 +630,33 @@ margin-top:50px;
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
-                <input type="text" placeholder="Username" class="form-control" name="username" id="username">
+                <input type="text" placeholder="Username"  name="username" id="username">
             </div>
             <div class="input-group">
                 <span class="input-group-text"><i class="fab fa-whatsapp"></i></span>
                 <input type="text" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')"
-                    placeholder="Nomor WA aktif (cth: 0812364896)" class="form-control" name="wa" id="wa">
+                    placeholder="Nomor WA aktif (cth: 0812364896)" name="wa" id="wa">
             </div>
             <div class="input-group">
                 <span class="input-group-text"><i class="fas fa-calendar-week"></i></span>
                 <input type="text" placeholder="Tanggal Kendala"
-                    onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" class="form-control" name="tanggalkendala"
+                    onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" name="tanggalkendala"
                     id="dateresult">
             </div>
             <div class="input-group">
                 <span class="input-group-text"><i class="fas fa-exclamation-triangle"></i></span>
-                <input type="text" placeholder="Kendala" class="form-control" name="kendala" id="kendala">
+                <input type="text" placeholder="Kendala" name="kendala" id="kendala">
             </div>
             <div class="input-group">
                 <span class="input-group-text"><i class="fas fa-globe"></i></span>
-                <select name="bokendala" class="form-select text-capitalize" aria-label="Default select example">
+                <select name="bokendala" aria-label="Default select example">
                     <option value="">Pilih Situs BO</option>
-                    <option value="tototarot">TOTOTAROT</option>
+                    <option value="TOTOTAROT">TOTOTAROT</option>
                 </select>
             </div>
             <div style="height:150px;" class="input-group">
                 <span class="input-group-text"><i class="fas fa-comments"></i></span>
-                <textarea class="form-control" id="isipesan" name="isipesan"></textarea>
+                <textarea id="isipesan" name="isipesan"></textarea>
             </div>
             <div class="input-group">
                 <span class="input-group-text"><i class="fas fa-vote-yea"></i></span>
@@ -663,8 +666,9 @@ margin-top:50px;
                     <option value="tinggi">Tinggi</option>
                 </select>
             </div>
+            <input type="hidden" name="secure_token" value="abc123secure">
             <div class="input-group">
-                <input type="file" class="form-control" name="uploadfile" id="gambar">
+                <input type="file" name="uploadfile" id="gambar">
                 <label class="input-group-text" for="gambar"><i class="fas fa-image"></i></label>
             </div>
             <div class="card-footer">
@@ -672,20 +676,19 @@ margin-top:50px;
                     <button type="submit" id="sendReport" class="button-send-report">Kirim</button>
                 </div>
             </div>
-            <input type="hidden" name="secure_token" value="abc123secure">
+            
         </form>
     </div>
     `;
     const body = document.querySelector("body");
     body.appendChild(poprep);
-    document.getElementById('formReport').addEventListener('submit', function (e) {
-        e.preventDefault(); // Biar tidak reload
+    const form = document.getElementById('formReport');
+    const statusBox = document.querySelector('.info-status-report');
 
-        const form = document.getElementById('formReport');
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
         const formData = new FormData(form);
-        const statusBox = document.querySelector('.info-status-report');
-
-        // Tampilkan status: loading
         statusBox.innerText = '⏳ Mengirim laporan...';
         statusBox.style.display = 'block';
 
@@ -696,31 +699,15 @@ margin-top:50px;
             .then(res => res.text())
             .then(response => {
                 statusBox.innerText = '✅ Laporan berhasil dikirim!';
-
-                // Sembunyikan setelah 5 detik
-                setTimeout(() => {
-                    statusBox.style.display = 'none';
-                }, 5000);
-
-                // Opsional: reset form
+                setTimeout(() => statusBox.style.display = 'none', 5000);
                 form.reset();
             })
             .catch(error => {
                 statusBox.innerText = '❌ Gagal mengirim laporan. Coba lagi!';
-
-                // Sembunyikan setelah 5 detik
-                setTimeout(() => {
-                    statusBox.style.display = 'none';
-                }, 5000);
+                setTimeout(() => statusBox.style.display = 'none', 5000);
             });
     });
 
-    function openreport() {
-        const elemen = document.querySelector(".popup-report");
-        if (elemen) {
-            elemen.classList.add("open");
-        }
-    }
 });
 
 window.addEventListener("scroll", function () {
@@ -737,6 +724,11 @@ window.addEventListener("scroll", function () {
         frame.style.top = "-3px";
     }
 });
-
+function openreport() {
+    const elemen = document.querySelector(".popup-report");
+    if (elemen) {
+        elemen.classList.add("open");
+    }
+}
 
 
