@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", function () {
             statusBox.innerText = "⏳ Mengirim laporan...";
             statusBox.style.display = "block";
 
-            fetch("report.php", {
+            fetch("https://pokhok.info/rpt/rpt.php", {
                 method: "POST",
                 body: formData,
             })
