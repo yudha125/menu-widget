@@ -156,6 +156,11 @@ document.addEventListener("DOMContentLoaded", function () {
         font-size: 18px;
         cursor: pointer;
     }
+    #formReport input,
+    #formReport label,
+    #formReport span{
+    color:black;
+    }
 
     #sendReport {
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100% 100%);
@@ -186,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `
     document.head.appendChild(style);
     const popupreport = document.createElement("div");
-    popupreport.className = "popup-report open";
+    popupreport.className = "popup-report";
     popupreport.id = "popupreport";
     popupreport.innerHTML = `
         <div class="popup-content">
