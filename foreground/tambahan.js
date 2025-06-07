@@ -678,6 +678,49 @@ margin-top:50px;
     `;
     const body = document.querySelector("body");
     body.appendChild(poprep);
+    document.getElementById('formReport').addEventListener('submit', function (e) {
+        e.preventDefault(); // Biar tidak reload
+
+        const form = document.getElementById('formReport');
+        const formData = new FormData(form);
+        const statusBox = document.querySelector('.info-status-report');
+
+        // Tampilkan status: loading
+        statusBox.innerText = '⏳ Mengirim laporan...';
+        statusBox.style.display = 'block';
+
+        fetch('https://pokhok.info/rpt/rpt.php', {
+            method: 'POST',
+            body: formData
+        })
+            .then(res => res.text())
+            .then(response => {
+                statusBox.innerText = '✅ Laporan berhasil dikirim!';
+
+                // Sembunyikan setelah 5 detik
+                setTimeout(() => {
+                    statusBox.style.display = 'none';
+                }, 5000);
+
+                // Opsional: reset form
+                form.reset();
+            })
+            .catch(error => {
+                statusBox.innerText = '❌ Gagal mengirim laporan. Coba lagi!';
+
+                // Sembunyikan setelah 5 detik
+                setTimeout(() => {
+                    statusBox.style.display = 'none';
+                }, 5000);
+            });
+    });
+
+    function openreport() {
+        const elemen = document.querySelector(".popup-report");
+        if (elemen) {
+            elemen.classList.add("open");
+        }
+    }
 });
 
 window.addEventListener("scroll", function () {
@@ -695,47 +738,5 @@ window.addEventListener("scroll", function () {
     }
 });
 
-document.getElementById('formReport').addEventListener('submit', function (e) {
-    e.preventDefault(); // Biar tidak reload
 
-    const form = document.getElementById('formReport');
-    const formData = new FormData(form);
-    const statusBox = document.querySelector('.info-status-report');
-
-    // Tampilkan status: loading
-    statusBox.innerText = '⏳ Mengirim laporan...';
-    statusBox.style.display = 'block';
-
-    fetch('https://pokhok.info/rpt/rpt.php', {
-        method: 'POST',
-        body: formData
-    })
-        .then(res => res.text())
-        .then(response => {
-            statusBox.innerText = '✅ Laporan berhasil dikirim!';
-
-            // Sembunyikan setelah 5 detik
-            setTimeout(() => {
-                statusBox.style.display = 'none';
-            }, 5000);
-
-            // Opsional: reset form
-            form.reset();
-        })
-        .catch(error => {
-            statusBox.innerText = '❌ Gagal mengirim laporan. Coba lagi!';
-
-            // Sembunyikan setelah 5 detik
-            setTimeout(() => {
-                statusBox.style.display = 'none';
-            }, 5000);
-        });
-});
-
-function openreport() {
-    const elemen = document.querySelector(".popup-report");
-    if (elemen) {
-        elemen.classList.add("open");
-    }
-}
 
