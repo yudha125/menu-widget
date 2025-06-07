@@ -122,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         border-radius: 0 6px 6px 0;
         width: 100%;
         font-size: 14px;
+        color:black !important;
     }
 
     #formReport textarea {
