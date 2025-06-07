@@ -158,9 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
         cursor: pointer;
     }
     #formReport input,
-    #formReport label,
-    #formReport span{
-    color:black;
+    #formReport select{
+    color:black !important;
     }
 
     #sendReport {
