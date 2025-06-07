@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 10001;
+        z-index: 1000001;
         width: 100%;
         height: 100%;
         background-image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `
     document.head.appendChild(style);
     const popupreport = document.createElement("div");
-    popupreport.className = "popup-report";
+    popupreport.className = "popup-report open";
     popupreport.id = "popupreport";
     popupreport.innerHTML = `
         <div class="popup-content">
@@ -199,13 +199,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             </div>
             <form id="formReport">
-
-                <div id="text-berjalan" class="position-relative" style="display: none;">
-                    <i onclick="closeTeks()" class="fas fa-times-circle closeteks"></i>
-                    <marquee class="teks-berjalan app-theme-text border-teks mb-2" scrollamount="4" direction="left">
-                        <span class="badge bg-danger">2025-01-11 15:40:50</span> []
-                    </marquee>
-                </div>
 
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-user"></i></span>
