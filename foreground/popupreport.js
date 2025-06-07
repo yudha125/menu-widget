@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `
     document.head.appendChild(style);
     const popupreport = document.createElement("div");
-    popupreport.className = "popup-report open";
+    popupreport.className = "popup-report";
     popupreport.id = "popupreport";
     popupreport.innerHTML = `
         <div class="popup-content">
