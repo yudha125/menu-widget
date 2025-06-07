@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         box-shadow: 4px 4px 8px rgb(15, 177, 177);
         display: flex;
         flex-direction: column;
+        z-index:99999999;
     }
 
     .popup-report .close-popup {
