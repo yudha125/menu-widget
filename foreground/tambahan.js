@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     .popup-report.open {
-        display: block;
+        display: block !important;
     }
 
     .popup-report .popup-content {
@@ -595,7 +595,7 @@ margin-top:50px;
     }
     const buttonMain = document.createElement("a");
     buttonMain.className = "button-main button-absolute";
-    buttonMain.href = "#";
+    buttonMain.href = "";
     buttonMain.innerHTML = `☎️ Laporan Masalah`;
 
     buttonMain.onclick = function () {
@@ -620,13 +620,6 @@ margin-top:50px;
 
         </div>
         <form id="formReport" style="z-index:10004;">
-
-            <div id="text-berjalan" class="position-relative" style="display: none;">
-                <i onclick="closeTeks()" class="fas fa-times-circle closeteks"></i>
-                <marquee class="teks-berjalan app-theme-text border-teks mb-2" scrollamount="4" direction="left">
-                    <span class="badge bg-danger">2025-01-11 15:40:50</span> []
-                </marquee>
-            </div>
 
             <div class="input-group">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
