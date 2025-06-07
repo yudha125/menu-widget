@@ -459,7 +459,10 @@ margin-top:50px;
 
   `;
     document.head.appendChild(style);
-
+    const link1 = document.createElement("link");
+    link1.rel = "stylesheet";
+    link1.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css";
+    document.head.appendChild(link1);
     const navItem = document.querySelectorAll(".navbar-fixed-top .container");
     navItem.forEach(function (item) {
         const navhead = item.querySelector(".navbar-header");
