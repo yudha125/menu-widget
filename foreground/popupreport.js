@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 10001;
+        z-index: 1000001;
         width: 100%;
         height: 100%;
         background-image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     #formReport {
+        z-index:1000003;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -209,33 +210,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-user"></i></span>
-                    <input type="text" placeholder="Username" class="form-control" name="username" id="username">
+                    <input type="text" placeholder="Username" name="username" id="username">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fab fa-whatsapp"></i></span>
                     <input type="text" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')"
-                        placeholder="Nomor WA aktif (cth: 0812364896)" class="form-control" name="wa" id="wa">
+                        placeholder="Nomor WA aktif (cth: 0812364896)" name="wa" id="wa">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-calendar-week"></i></span>
                     <input type="text" placeholder="Tanggal Kendala"
-                        onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" class="form-control" name="tanggalkendala"
+                        onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" name="tanggalkendala"
                         id="dateresult">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-exclamation-triangle"></i></span>
-                    <input type="text" placeholder="Kendala" class="form-control" name="kendala" id="kendala">
+                    <input type="text" placeholder="Kendala" name="kendala" id="kendala">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-globe"></i></span>
-                    <select name="bokendala" class="form-select text-capitalize" aria-label="Default select example">
+                    <select name="bokendala" class="form-select-report" aria-label="Default select example">
                         <option value="">Pilih Situs BO</option>
                         <option value="tototarot">TOTOTAROT</option>
                     </select>
                 </div>
                 <div style="height:150px;" class="input-group">
                     <span class="input-group-text"><i class="fas fa-comments"></i></span>
-                    <textarea class="form-control" id="isipesan" name="isipesan"></textarea>
+                    <textarea id="isipesan" name="isipesan"></textarea>
                 </div>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-vote-yea"></i></span>
@@ -246,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </select>
                 </div>
                 <div class="input-group">
-                    <input type="file" class="form-control" name="uploadfile" id="gambar">
+                    <input type="file" name="uploadfile" id="gambar">
                     <label class="input-group-text" for="gambar"><i class="fas fa-image"></i></label>
                 </div>
                 <div class="card-footer">
