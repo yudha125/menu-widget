@@ -595,7 +595,7 @@ margin-top:50px;
     }
     const buttonMain = document.createElement("a");
     buttonMain.className = "button-main button-absolute";
-    buttonMain.href = "";
+    buttonMain.href = "#";
     buttonMain.innerHTML = `☎️ Laporan Masalah`;
 
     buttonMain.onclick = function () {
