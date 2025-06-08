@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     #formReport textarea {
         resize: vertical;
         min-height: 120px;
+
     }
 
     #formReport .input-group-abunawas input[type="file"] {
@@ -163,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
     #formReport input,
     #formReport select{
     color:black !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     }
 
     #sendReport {
