@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonMain.className = "button-main button-absolute";
     buttonMain.href = "#";
     buttonMain.textContent = "☎️ Laporan Masalah";
-    buttonMain.style.position = "absolute";
+    buttonMain.style.position = "fixed";
     buttonMain.style.bottom = "0";
     buttonMain.style.left = "10%";
     buttonMain.style.zIndex = "100000";
@@ -292,6 +292,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Ganti behavior submit form
     const form = document.getElementById("formReport");
+    const statusBox = document.querySelector(".info-status-report");
+
     if (form) {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
