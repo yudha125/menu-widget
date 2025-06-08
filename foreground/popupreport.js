@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", function () {
 (function () {
     'use strict';
     const today = new Date();
-    const launchStart = new Date('2025-06-8');
+    const launchStart = new Date('2025-06-10');
     const launchEnd = new Date('2025-06-13'); // Habis di akhir 12 Juni
 
     if (today >= launchStart && today < launchEnd) {
