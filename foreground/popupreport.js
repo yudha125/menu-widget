@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
         color: white;
     }
 
-
+    .form-control-abunawas::placeholder {
+        color: black !important; /* Ganti sesuai warna yang diinginkan */
+        opacity: 1; /* Supaya warna tidak transparan */
+    }
 
     .popup-report {
         display: none;
@@ -228,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-globe"></i></span>
                     <select name="bokendala" class="form-select text-capitalize" aria-label="Default select example">
-                        <option value="">Pilih Situs BO</option>
+                        <option value="">SITUS</option>
                         <option value="tototarot">TOTOTAROT</option>
                     </select>
                 </div>
@@ -290,33 +293,31 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ganti behavior submit form
     const form = document.getElementById("formReport");
     if (form) {
-        form.addEventListener("submit", function (e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
 
             const formData = new FormData(form);
-            const statusBox = document.querySelector(".info-status-report");
+            statusBox.innerText = '⏳ Mengirim laporan...';
+            statusBox.style.display = 'block';
 
-            statusBox.innerText = "⏳ Mengirim laporan...";
-            statusBox.style.display = "block";
-
-            fetch("https://pokhok.info/rpt/rpt.php", {
-                method: "POST",
-                body: formData,
+            fetch('https://pokhok.info/rpt/rpt.php', {
+                method: 'POST',
+                body: formData
             })
-                .then((res) => res.text())
-                .then((response) => {
-                    statusBox.innerText = "✅ Laporan berhasil dikirim!";
-                    setTimeout(() => {
-                        statusBox.style.display = "none";
-                    }, 5000);
-                    form.reset();
+                .then(res => res.json())
+                .then(data => {
+                    statusBox.innerText = data.message;
+                    setTimeout(() => statusBox.style.display = 'none', 5000);
+                    if (data.success) {
+                        form.reset();
+                    }
                 })
-                .catch((error) => {
-                    statusBox.innerText = "❌ Gagal mengirim laporan. Coba lagi!";
-                    setTimeout(() => {
-                        statusBox.style.display = "none";
-                    }, 5000);
+                .catch(err => {
+                    statusBox.innerText = '❌ Gagal koneksi ke server.';
+                    setTimeout(() => statusBox.style.display = 'none', 5000);
                 });
         });
+
     }
 });
+
