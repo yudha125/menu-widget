@@ -223,9 +223,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-calendar-week"></i></span>
-                    <input type="text" placeholder="Tanggal Terjadi Kendala"
-                        onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" class="form-control-abunawas" name="tanggalkendala"
-                        id="dateresult">
+                    <input type="date" placeholder="Tanggal Terjadi Kendala"
+                        class="form-control-abunawas" name="tanggalkendala" id="dateresult">
                 </div>
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-exclamation-triangle"></i></span>
