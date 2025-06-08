@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     .form-control-abunawas::placeholder {
-        color: black !important; /* Ganti sesuai warna yang diinginkan */
+        color: rgba(87, 87, 99, 1) !important; /* Ganti sesuai warna yang diinginkan */
         opacity: 1; /* Supaya warna tidak transparan */
     }
 
