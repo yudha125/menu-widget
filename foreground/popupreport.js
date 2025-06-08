@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
         width: 100%;
         font-size: 14px;
         color:black !important;
+        font-family: Arial, Helvetica, sans-serif !important;
     }
 
     #formReport textarea {
