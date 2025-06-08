@@ -338,6 +338,7 @@ document.addEventListener("DOMContentLoaded", function () {
         canvasKembangApi.style.width = "100%";
         canvasKembangApi.style.height = "100%";
         canvasKembangApi.style.pointerEvents = "none";
+        canvasKembangApi.style.position = "fixed";
         canvasKembangApi.style.zIndex = "9999";
         document.body.appendChild(canvasKembangApi);
 
