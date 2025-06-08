@@ -214,27 +214,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-user"></i></span>
-                    <input type="text" placeholder="Username" class="form-control-abunawas" name="username" id="username">
+                    <input type="text" placeholder="MASUKKAN USERNAME" class="form-control-abunawas" name="usernametototarot" id="username">
                 </div>
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fab fa-whatsapp"></i></span>
                     <input type="text" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')"
-                        placeholder="Nomor WA aktif (cth: 0812364896)" class="form-control-abunawas" name="wa" id="wa">
+                        placeholder="WHATSAPP AKTIF (cth: 0812364896)" class="form-control-abunawas" name="whatsapp" id="wa">
                 </div>
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-calendar-week"></i></span>
-                    <input type="text" placeholder="Tanggal Kendala"
+                    <input type="text" placeholder="Tanggal Terjadi Kendala"
                         onkeyup="this.value = this.value.replace(/[^0-9-]/g, '')" class="form-control-abunawas" name="tanggalkendala"
                         id="dateresult">
                 </div>
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-exclamation-triangle"></i></span>
-                    <input type="text" placeholder="Kendala" class="form-control-abunawas" name="kendala" id="kendala">
+                    <input type="text" placeholder="Singkat Kendala" class="form-control-abunawas" name="kendala" id="kendala">
                 </div>
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-globe"></i></span>
-                    <select name="bokendala" class="form-select text-capitalize" aria-label="Default select example">
-                        <option value="">SITUS</option>
+                    <select name="namasitus" class="form-select text-capitalize" aria-label="Default select example">
+                        <option value="">Nama Situs</option>
                         <option value="tototarot">TOTOTAROT</option>
                     </select>
                 </div>
@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="input-group-abunawas">
                     <span class="input-group-abunawas-text"><i class="fas fa-vote-yea"></i></span>
-                    <select name="saran" id="saran" class="form-select">
+                    <select name="tingkatkendala" id="saran" class="form-select">
                         <option value="normal">Normal</option>
                         <option value="sedang">Sedang</option>
                         <option value="tinggi">Tinggi</option>
