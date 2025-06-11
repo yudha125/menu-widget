@@ -495,49 +495,50 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-    const bannerDiv = document.createElement('div');
-    bannerDiv.className = 'custom-banner';
-    bannerDiv.style.margin = '20px 0';
-    bannerDiv.innerHTML = `
+    if (!isMobileDevice()) {
+        const bannerDiv = document.createElement('div');
+        bannerDiv.className = 'custom-banner';
+        bannerDiv.style.margin = '20px 0';
+        bannerDiv.innerHTML = `
     <img src="https://yudha125.github.io/menu-widget/foreground/giftpanjang.gif" alt="Banner Iklan"
     style="width:100%; max-width:840px; display:block; margin:0 auto;">
         `;
 
-    // Cari parent container
-    const slider = document.getElementById('slider');
-    const parent = slider.parentNode;
-    // Sisipkan setelah slider
-    if (slider && parent) {
-        parent.insertBefore(bannerDiv, document.getElementById('latest-results'));
+        // Cari parent container
+        const slider = document.getElementById('slider');
+        const parent = slider.parentNode;
+        // Sisipkan setelah slider
+        if (slider && parent) {
+            parent.insertBefore(bannerDiv, document.getElementById('latest-results'));
+        }
+
+
+        const slideCarousel = document.querySelectorAll(".slider .item");
+        if (slideCarousel) {
+            slideCarousel.forEach(function (item) {
+                const img = item.querySelector("img");
+                if (img) {
+                    const wrapper = document.createElement("div");
+                    wrapper.style.position = "relative";
+                    wrapper.style.display = "inline-block";
+
+                    // Pindahkan gambar ke dalam wrapper
+                    img.parentNode.insertBefore(wrapper, img);
+                    wrapper.appendChild(img);
+                    const frame = document.createElement("img");
+                    frame.src = "https://yudha125.github.io/menu-widget/foreground/frame5.webp";
+                    frame.style.position = "absolute";
+                    frame.style.top = "0";
+                    frame.style.left = "0";
+                    frame.style.width = "100%";
+                    frame.style.height = "100%";
+                    frame.style.pointerEvents = "none";
+                    frame.alt = "frame-iklan";
+                    wrapper.appendChild(frame);
+                }
+            });
+        }
     }
-
-
-    const slideCarousel = document.querySelectorAll(".slider .item");
-    if (slideCarousel) {
-        slideCarousel.forEach(function (item) {
-            const img = item.querySelector("img");
-            if (img) {
-                const wrapper = document.createElement("div");
-                wrapper.style.position = "relative";
-                wrapper.style.display = "inline-block";
-
-                // Pindahkan gambar ke dalam wrapper
-                img.parentNode.insertBefore(wrapper, img);
-                wrapper.appendChild(img);
-                const frame = document.createElement("img");
-                frame.src = "https://yudha125.github.io/menu-widget/foreground/frame5.webp";
-                frame.style.position = "absolute";
-                frame.style.top = "0";
-                frame.style.left = "0";
-                frame.style.width = "100%";
-                frame.style.height = "100%";
-                frame.style.pointerEvents = "none";
-                frame.alt = "frame-iklan";
-                wrapper.appendChild(frame);
-            }
-        });
-    }
-
     const latestResults = document.getElementById("latest-results");
     if (latestResults) {
         // Buat elemen frame atas
