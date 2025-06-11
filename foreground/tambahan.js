@@ -77,9 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
         text-transform: uppercase;
         height: 50px !important;
         width: 100% !important;
-        --border-radius: 4px;
+       --border-radius: 4px;
         border-radius: 20px !important;
-        --border-width: 5px;
+       --border-width: 5px;
         appearance: none;
         position: relative;
         border: 0;
@@ -94,12 +94,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .sidebar-button .btn.btn-theme:hover::after {
         animation-play-state: paused;
         box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
-        transform: translate3d(0, -2px, 0);
+        transform: translate3d(0,-2px, 0);
     }
     
     .sidebar-button .btn.btn-theme::after {
-        --m-i: linear-gradient(#000, #000);
-        --m-o: content-box, padding-box;
+       --m-i: linear-gradient(#000, #000);
+       --m-o: content-box, padding-box;
         content: "";
         position: absolute;
         left: 0;
@@ -116,13 +116,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 rgb(34, 255, 5),
                 #2eff4a,
                 #14eb00);
-        -webkit-mask-image: var(--m-i), var(--m-i);
+       -webkit-mask-image: var(--m-i), var(--m-i);
         mask-image: var(--m-i), var(--m-i);
-        -webkit-mask-origin: var(--m-o);
+       -webkit-mask-origin: var(--m-o);
         mask-origin: var(--m-o);
-        -webkit-mask-clip: var(--m-o);
+       -webkit-mask-clip: var(--m-o);
         mask-composite: exclude;
-        -webkit-mask-composite: destination-out;
+       -webkit-mask-composite: destination-out;
         filter: hue-rotate(0);
         animation: rotate-hue linear 1000ms infinite;
         animation-play-state: running;
@@ -154,86 +154,86 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
 
-    .button - main.button - absolute:hover {
-        background: linear - gradient(179deg, rgba(2, 0, 36, 1) 0 %, rgba(9, 9, 121, 1) 27 %, rgba(22, 93, 107, 1) 100 %);
+    .button-main.button-absolute:hover {
+        background: linear-gradient(179deg, rgba(2, 0, 36, 1) 0 %, rgba(9, 9, 121, 1) 27 %, rgba(22, 93, 107, 1) 100 %);
         color: white;
     }
     
-    .form - control - abunawas::placeholder {
+    .form-control-abunawas::placeholder {
         color: rgba(87, 87, 99, 1)!important; /* Ganti sesuai warna yang diinginkan */
         opacity: 1; /* Supaya warna tidak transparan */
     }
     
-    .popup - report {
+    .popup-report {
         display: none !important;
         position: fixed;
         top: 0;
         left: 0;
-        z - index: 1000001;
+        z-index: 1000001;
         width: 100 %;
         height: 100 %;
-        background - image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
-        background - repeat: no - repeat;
-        background - size: cover;
-        background - position: center;
+        background-image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     #popupreport.open{
         display: block;
     }
         
-            .popup - report.popup - content {
+        .popup-report.popup-content {
         position: absolute;
         top: 50 %;
         left: 50 %;
-        transform: translate(-50 %, -50 %);
+        transform: translate(-50 %,-50 %);
         width: 80 %;
-        max - width: 600px;
-        background - color: rgba(255, 255, 255, 0.9);
-        border - radius: 10px;
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
         padding: 20px;
-        box - shadow: 4px 4px 8px rgb(15, 177, 177);
+        box-shadow: 4px 4px 8px rgb(15, 177, 177);
         display: flex;
-        flex - direction: column;
-        z - index: 99999999;
+        flex-direction: column;
+        z-index: 99999999;
     }
         
-            .popup - report.close - popup {
+            .popup-report.close-popup {
         position: absolute;
-        top: -30px;
-        right: -20px;
-        font - size: 24px;
+        top:-30px;
+        right:-20px;
+        font-size: 24px;
         color: rgb(255, 255, 255);
         cursor: pointer;
-        background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
         padding: 5px 10px;
-        border - radius: 50 %;
-        box - shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+        border-radius: 50 %;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
         
-            .popup - report.info - status - report {
+            .popup-report.info-status-report {
         position: absolute;
         top: 5px;
         left: 50 %;
         transform: translateX(-50 %);
-        font - size: 17px;
+        font-size: 17px;
         color: rgb(7, 64, 82);
-        font - weight: bold;
-        text - align: center;
-        background - color: aquamarine;
+        font-weight: bold;
+        text-align: center;
+        background-color: aquamarine;
         padding: 10px;
-        border - radius: 10px;
+        border-radius: 10px;
         display: none;
     }
         
-            .popup - report.popup - content.logo {
+            .popup-report.popup-content.logo {
         display: flex;
-        justify - content: center;
-        background - color: black;
+        justify-content: center;
+        background-color: black;
 
     }
         
-            .popup - report.popup - content.logo img {
+            .popup-report.popup-content.logo img {
         width: 300px;
         height: auto;
 
@@ -243,65 +243,65 @@ document.addEventListener("DOMContentLoaded", function () {
 
     #formReport {
         display: flex;
-        flex - direction: column;
+        flex-direction: column;
         gap: 15px;
-        max - width: 600px;
+        max-width: 600px;
         margin: 0 auto;
         padding: 20px;
     }
 
-    #formReport.input - group - abunawas {
+    #formReport.input-group-abunawas {
         display: flex;
-        align - items: stretch;
+        align-items: stretch;
         width: 100 %;
     }
 
-    #formReport.input - group - abunawas - text {
-        background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
+    #formReport.input-group-abunawas-text {
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
         color: #ffffff;
-        font - weight: bold;
-        border - radius: 6px 0 0 6px;
+        font-weight: bold;
+        border-radius: 6px 0 0 6px;
         padding: 10px 15px;
         display: flex;
-        align - items: center;
-        justify - content: center;
-        min - width: 45px;
+        align-items: center;
+        justify-content: center;
+        min-width: 45px;
     }
 
-    #formReport.form - control - abunawas,
-        #formReport.form - select,
+    #formReport.form-control-abunawas,
+        #formReport.form-select,
         #formReport textarea {
         border: 1px solid #ccc;
         padding: 10px 15px;
-        border - radius: 0 6px 6px 0;
+        border-radius: 0 6px 6px 0;
         width: 100 %;
-        font - size: 14px;
+        font-size: 14px;
         color: black!important;
-        font - family: Arial, Helvetica, sans - serif!important;
+        font-family: Arial, Helvetica, sans-serif!important;
     }
 
     #formReport textarea {
         resize: vertical;
-        min - height: 120px;
+        min-height: 120px;
 
     }
 
-    #formReport.input - group - abunawas input[type = "file"] {
-        border - radius: 6px 0 0 6px;
+    #formReport.input-group-abunawas input[type = "file"] {
+        border-radius: 6px 0 0 6px;
     }
 
-    #formReport.input - group - abunawas label.input - group - abunawas - text {
-        border - radius: 0 6px 6px 0;
-        background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
-        font - weight: bold;
+    #formReport.input-group-abunawas label.input-group-abunawas-text {
+        border-radius: 0 6px 6px 0;
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
+        font-weight: bold;
         cursor: pointer;
     }
 
-    #formReport #text - berjalan {
-        background - color: rgba(0, 128, 128, 0.15);
+    #formReport #text-berjalan {
+        background-color: rgba(0, 128, 128, 0.15);
         padding: 8px 10px;
-        border - radius: 8px;
-        margin - bottom: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
         position: relative;
     }
 
@@ -310,39 +310,39 @@ document.addEventListener("DOMContentLoaded", function () {
         top: 4px;
         right: 6px;
         color: red;
-        font - size: 18px;
+        font-size: 18px;
         cursor: pointer;
     }
     #formReport input,
         #formReport select{
         color: black!important;
-        font - family: Arial, Helvetica, sans - serif!important;
+        font-family: Arial, Helvetica, sans-serif!important;
     }
 
     #sendReport {
-        background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
         color: #ffffff;
-        font - weight: bold;
+        font-weight: bold;
         border: none;
         padding: 10px 15px;
-        border - radius: 6px;
+        border-radius: 6px;
         cursor: pointer;
-        transition: background - color 0.3s ease;
+        transition: background-color 0.3s ease;
     }
 
-    @media(max - width: 600px) {
+    @media(max-width: 600px) {
         #formReport {
             padding: 15px;
         }
 
-        #formReport.input - group - abunawas - text {
-            font - size: 12px;
+        #formReport.input-group-abunawas-text {
+            font-size: 12px;
             padding: 8px;
         }
 
-        #formReport.form - control - abunawas,
-            #formReport.form - select {
-            font - size: 13px;
+        #formReport.form-control-abunawas,
+            #formReport.form-select {
+            font-size: 13px;
         }
     }
     `
@@ -350,14 +350,14 @@ document.addEventListener("DOMContentLoaded", function () {
         cssText += `    
     .results {
         background: linear-gradient(0deg, rgb(16, 29, 31) 0 %, rgb(22, 22, 31) 50 %, rgb(68, 80, 107) 100 %)!important;
-        box - shadow: 4px 4px 10px rgba(26, 229, 243, 0.919)!important;
+        box-shadow: 4px 4px 10px rgba(26, 229, 243, 0.919)!important;
     }
     .results {
         height: 263px;
     }
-    .results - number{
+    .results-number{
         padding: 2px;
-        font - size: 13px!important;
+        font-size: 13px!important;
     }
     `
     } else {
@@ -378,7 +378,7 @@ document.addEventListener("DOMContentLoaded", function () {
         background-repeat: no-repeat; */
         height: 90px;
         border: none;
-        background- color: rgba(250, 250, 250, 0);
+        background-color: rgba(250, 250, 250, 0);
     
     }
     .inner-wrap .panel-blue{
@@ -389,7 +389,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     .item.bank.online {
         position: absolute;
-        z - index: 10;
+        z-index: 10;
         /* top: 50%; */
         bottom: 0;
         left: 50 %;
@@ -398,7 +398,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     .item.bank.offline {
         position: absolute;
-        z - index: 10;
+        z-index: 10;
         /* top: 50%; */
         bottom: 0;
         left: 50 %;
@@ -412,58 +412,58 @@ document.addEventListener("DOMContentLoaded", function () {
         top: 50 %;
         left: 50 %;
         transform: translateX(-50 %) translateY(-50 %);
-        z - index: 1;
-        box - shadow: -2px 2px 5px rgba(26, 229, 243, 1);
+        z-index: 1;
+        box-shadow:-2px 2px 5px rgba(26, 229, 243, 1);
     }
     
-    .container - img {
-    margin - top: auto;
+    .container-img {
+    margin-top: auto;
     }
     
     .item.slides {
-        margin - top: auto;
-        margin - bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     
        
-    #result - slideshow {
-        max - height: 172px;
-        overflow - y: auto;
-        overflow - x: hidden;
+    #result-slideshow {
+        max-height: 172px;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
-    .container - img - bottom - frame{
-        margin - top: -20px;
+    .container-img-bottom-frame{
+        margin-top:-20px;
     }
-    .owl - theme.bankscroll{
-    margin - top: -40px;
+    .owl-theme.bankscroll{
+    margin-top:-40px;
     }
-    .modal - header.close {
+    .modal-header.close {
     display: flex;
-    align - items: center;
-    justify - content: center;
-    background - color: rgb(18, 166, 172, 1);
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 166, 172, 1);
     width: 35px;
     height: 35px;
-    border - radius: 50 %; /* Lebih rapi pakai 50% daripada 25px */
+    border-radius: 50 %; /* Lebih rapi pakai 50% daripada 25px */
     padding: 0;
     border: none;
     cursor: pointer;
     opacity: 1!important;
     }
     
-    .modal - header.close span {
-    font - size: 20px;
+    .modal-header.close span {
+    font-size: 20px;
     color: white;
-    font - weight: bold;
-    line - height: 1; /* Tambahan ini membantu agar vertikal pas */
+    font-weight: bold;
+    line-height: 1; /* Tambahan ini membantu agar vertikal pas */
     }
 
-    #setuju.btn.btn - theme{
+    #setuju.btn.btn-theme{
 
     }
-    div.row - legend.text - center.btn.btn - theme{
-        min - width: 180px;
-        margin - top: 50px;
+    div.row-legend.text-center.btn.btn-theme{
+        min-width: 180px;
+        margin-top: 50px;
     }
     `}
     if (isMobileDevice()) {
@@ -568,7 +568,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Clone elemen frame atas untuk dijadikan bottom frame
         const bottomFrame = topFrame.cloneNode(true);
-        bottomFrame.className = "container-img-bottom-frame"; // <- class ini diberikan ke bottomFrame
+        bottomFrame.className = "container-img-bottom-frame"; // <-class ini diberikan ke bottomFrame
 
         // Sisipkan ke DOM
         latestResults.parentNode.insertBefore(topFrame, latestResults);
@@ -760,8 +760,8 @@ window.addEventListener("scroll", function () {
     if (!frame) return;
 
     if (y < 300) {
-        frame.style.height = (120 - (y * 0.133)) + "px"; // dari 120 ke 80
-        frame.style.top = (-3 * (y / 300)) + "px"; // dari 0 ke -40
+        frame.style.height = (120-(y * 0.133)) + "px"; // dari 120 ke 80
+        frame.style.top = (-3 * (y / 300)) + "px"; // dari 0 ke-40
     } else {
         frame.style.height = "80px";
         frame.style.top = "-3px";
@@ -826,7 +826,7 @@ window.addEventListener("scroll", function () {
             diff: function (vector) {
                 var target = this.copy();
                 return Math.sqrt(
-                    (target.x -= vector.x) * target.x + (target.y -= vector.y) * target.y
+                    (target.x-= vector.x) * target.x + (target.y-= vector.y) * target.y
                 );
             },
 
@@ -846,10 +846,10 @@ window.addEventListener("scroll", function () {
             this.start = start;
             this.pos = this.start.copy();
             this.target = target;
-            this.spread = Math.round(Math.random() * (maxP - minP)) + minP;
+            this.spread = Math.round(Math.random() * (maxP-minP)) + minP;
             this.distance = target.diff(start);
             this.speed = speed || Math.random() * 5 + 15;
-            this.angle = Math.atan2(target.y - start.y, target.x - start.x);
+            this.angle = Math.atan2(target.y-start.y, target.x-start.x);
             this.velocity = new Vector(
                 Math.cos(this.angle) * this.speed,
                 Math.sin(this.angle) * this.speed
@@ -858,7 +858,7 @@ window.addEventListener("scroll", function () {
             this.particals = [];
             this.prevPositions = [];
 
-            var colorSet = colors[Math.round(Math.random() * (colors.length - 1))];
+            var colorSet = colors[Math.round(Math.random() * (colors.length-1))];
 
             for (var i = 0; i < this.spread; i++) {
                 this.particals.push(new Partical(target.copy(), colorSet));
@@ -869,7 +869,7 @@ window.addEventListener("scroll", function () {
             constructor: Firework,
 
             draw: function () {
-                var last = this.prevPositions[this.prevPositions.length - 1] || this.pos;
+                var last = this.prevPositions[this.prevPositions.length-1] || this.pos;
 
                 ctx.beginPath();
                 ctx.moveTo(last.x, last.y);
@@ -911,7 +911,7 @@ window.addEventListener("scroll", function () {
             this.gravity = Math.random() * 3 + 0.1;
             this.alpha = .8;
             this.angle = Math.random() * (Math.PI * 2);
-            this.color = colors[Math.round(Math.random() * (colors.length - 1))];
+            this.color = colors[Math.round(Math.random() * (colors.length-1))];
             this.prevPositions = [];
         }
 
@@ -919,7 +919,7 @@ window.addEventListener("scroll", function () {
             constructor: Partical,
 
             draw: function () {
-                var last = this.prevPositions[this.prevPositions.length - 1] || this.pos;
+                var last = this.prevPositions[this.prevPositions.length-1] || this.pos;
 
                 ctx.beginPath();
                 ctx.moveTo(last.x, last.y);
@@ -937,9 +937,9 @@ window.addEventListener("scroll", function () {
                     this.prevPositions.push(this.pos.copy());
 
                     if (this.prevPositions.length > 10) this.prevPositions.shift();
-                    if (this.speed > 1) this.speed -= this.ease;
+                    if (this.speed > 1) this.speed-= this.ease;
 
-                    this.alpha -= 0.01;
+                    this.alpha-= 0.01;
                     this.gravity += 0.01;
 
                     this.pos.add({
@@ -952,7 +952,7 @@ window.addEventListener("scroll", function () {
 
         function addFirework(target) {
             var startPos = new Vector(W / 2, H);
-            target = target || new Vector(Math.random() * W, Math.random() * (H - 300));
+            target = target || new Vector(Math.random() * W, Math.random() * (H-300));
             fireworks.push(new Firework(startPos, target));
         }
 
