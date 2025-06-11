@@ -359,17 +359,6 @@ document.addEventListener("DOMContentLoaded", function () {
         padding: 2px;
         font-size: 13px!important;
     }
-    `
-    } else {
-        cssText += `
-    .buttonWrap.buttons.button-blue.contactSubmitButton{
-        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
-    }
-    .buttonWrap.buttong.button-green.contactSubmitButton{
-        background: linear-gradient(0deg, rgb(16, 56, 28) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
-    }
-    
-    
     .item.bank {
         position: relative;
         background-size: 170px 90px;
@@ -380,13 +369,6 @@ document.addEventListener("DOMContentLoaded", function () {
         background-color: rgba(250, 250, 250, 0);
     
     }
-    .inner-wrap .panel-blue{
-        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
-        max-height:700px;
-        margin-bottom:45px;
-        overflow-y:auto;
-    }
-    
     .item.bank.online {
         position: absolute;
         z-index: 10;
@@ -415,11 +397,24 @@ document.addEventListener("DOMContentLoaded", function () {
         z-index: 1;
         box-shadow:-2px 2px 5px rgba(26, 229, 243, 1);
     }
-    
-    .container-img {
-    margin-top: auto;
+    .container-img-bottom-frame{
+        margin-top:-20px;
     }
-    
+    `
+    } else {
+        cssText += `
+    .buttonWrap.buttons.button-blue.contactSubmitButton{
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
+    }
+    .buttonWrap.buttong.button-green.contactSubmitButton{
+        background: linear-gradient(0deg, rgb(16, 56, 28) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
+    }
+    .inner-wrap .panel-blue{
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
+        max-height:700px;
+        margin-bottom:45px;
+        overflow-y:auto;
+    }
     .item.slides {
         margin-top: auto;
         margin-bottom: auto;
@@ -431,9 +426,7 @@ document.addEventListener("DOMContentLoaded", function () {
         overflow-y: auto;
         overflow-x: hidden;
     }
-    .container-img-bottom-frame{
-        margin-top:-20px;
-    }
+    
     .owl-theme.bankscroll{
     margin-top:-40px;
     }
@@ -563,7 +556,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (latestResults) {
         // Buat elemen frame atas
         const topFrame = document.createElement("div");
-        topFrame.innerHTML = `< img src = "https://yudha125.github.io/menu-widget/foreground/border.webp" alt = "border banner" style = "width: 100%; height: 20px;" > `;
+        topFrame.innerHTML = `<img src="https://yudha125.github.io/menu-widget/foreground/border.webp" alt="border banner" style="width: 100%; height: 20px;"> `;
         topFrame.className = "container-img-top-frame";
 
         // Clone elemen frame atas untuk dijadikan bottom frame
@@ -625,68 +618,69 @@ document.addEventListener("DOMContentLoaded", function () {
     popupreport.className = "popup-report";
     popupreport.id = "popupreport";
     popupreport.innerHTML = `
-    <di div class="popup-content" >
-                <div class="close-popup" onclick="this.parentElement.parentElement.classList.remove('open');">X</div>
-                <div class="info-status-report"></div>
-                <div class="logo">
-                    <a href="https://tototarot.net/" target="_blank">
-                        <img width="300" class="d-block mx-auto" src="https://tototarot.net/assets/img/cgn/logo.png"
-                            alt="logo keluhan">
-                    </a>
-    
-                </div>
-                <form id="formReport">
-    
-                    <div class="input-group-abunawas">
-                        <span class="input-group-abunawas-text"><i class="fas fa-user"></i></span>
-                        <input type="text" placeholder="MASUKKAN USERNAME" class="form-control-abunawas" name="usernametototarot" id="username">
-                    </div>
-                    <div class="input-group-abunawas">
-                        <span class="input-group-abunawas-text"><i class="fab fa-whatsapp"></i></span>
-                        <input type="text" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')"
-                            placeholder="WHATSAPP AKTIF (cth: 0812364896)" class="form-control-abunawas" name="whatsapp" id="wa">
-                    </div>
-                    <div class="input-group-abunawas">
-                        <span class="input-group-abunawas-text"><i class="fas fa-calendar-week"></i></span>
-                        <input type="date" placeholder="Tanggal Terjadi Kendala"
-                            class="form-control-abunawas" name="tanggalkendala" id="dateresult">
-                    </div>
-                    <div class="input-group-abunawas">
-                        <span class="input-group-abunawas-text"><i class="fas fa-exclamation-triangle"></i></span>
-                        <input type="text" placeholder="Singkat Kendala" class="form-control-abunawas" name="kendala" id="kendala">
-                    </div>
-                    <div class="input-group-abunawas">
-                        <span class="input-group-abunawas-text"><i class="fas fa-globe"></i></span>
-                        <select name="namasitus" class="form-select text-capitalize" aria-label="Default select example">
-                            <option value="">Nama Situs</option>
-                            <option value="tototarot">TOTOTAROT</option>
-                        </select>
-                    </div>
-                    <div style="height:150px;" class="input-group-abunawas">
-                        <span class="input-group-abunawas-text"><i class="fas fa-comments"></i></span>
-                        <textarea class="form-control-abunawas" id="isipesan" name="isipesan"></textarea>
-                    </div>
-                    <div class="input-group-abunawas">
-                        <span class="input-group-abunawas-text"><i class="fas fa-vote-yea"></i></span>
-                        <select name="tingkatkendala" id="saran" class="form-select">
-                            <option value="normal">Normal</option>
-                            <option value="sedang">Sedang</option>
-                            <option value="tinggi">Tinggi</option>
-                        </select>
-                    </div>
-    
-                    <div class="input-group-abunawas">
-                        <input type="file" class="form-control-abunawas" name="uploadfile" id="gambar">
-                        <label class="input-group-abunawas-text" for="gambar"><i class="fas fa-image"></i></label>
-                    </div>
-                    <input type="hidden" name="secure_token" value="abc123secure">
-                    <div class="card-footer">
-                        <div class="d-grid">
-                            <button type="submit" id="sendReport" class="button-send-report">Kirim</button>
-                        </div>
-                    </div>
-                </form>
-            </di >
+ <div class="popup-content">
+    <div class="close-popup" onclick="this.parentElement.parentElement.classList.remove('open');">X</div>
+    <div class="info-status-report"></div>
+    <div class="logo">
+        <a href="https://tototarot.net/" target="_blank">
+            <img width="300" class="d-block mx-auto" src="https://tototarot.net/assets/img/cgn/logo.png"
+                alt="logo keluhan">
+        </a>
+
+    </div>
+    <form id="formReport">
+
+        <div class="input-group-abunawas">
+            <span class="input-group-abunawas-text"><i class="fas fa-user"></i></span>
+            <input type="text" placeholder="MASUKKAN USERNAME" class="form-control-abunawas" name="usernametototarot"
+                id="username">
+        </div>
+        <div class="input-group-abunawas">
+            <span class="input-group-abunawas-text"><i class="fab fa-whatsapp"></i></span>
+            <input type="text" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')"
+                placeholder="WHATSAPP AKTIF (cth: 0812364896)" class="form-control-abunawas" name="whatsapp" id="wa">
+        </div>
+        <div class="input-group-abunawas">
+            <span class="input-group-abunawas-text"><i class="fas fa-calendar-week"></i></span>
+            <input type="date" placeholder="Tanggal Terjadi Kendala" class="form-control-abunawas" name="tanggalkendala"
+                id="dateresult">
+        </div>
+        <div class="input-group-abunawas">
+            <span class="input-group-abunawas-text"><i class="fas fa-exclamation-triangle"></i></span>
+            <input type="text" placeholder="Singkat Kendala" class="form-control-abunawas" name="kendala" id="kendala">
+        </div>
+        <div class="input-group-abunawas">
+            <span class="input-group-abunawas-text"><i class="fas fa-globe"></i></span>
+            <select name="namasitus" class="form-select text-capitalize" aria-label="Default select example">
+                <option value="">Nama Situs</option>
+                <option value="tototarot">TOTOTAROT</option>
+            </select>
+        </div>
+        <div style="height:150px;" class="input-group-abunawas">
+            <span class="input-group-abunawas-text"><i class="fas fa-comments"></i></span>
+            <textarea class="form-control-abunawas" id="isipesan" name="isipesan"></textarea>
+        </div>
+        <div class="input-group-abunawas">
+            <span class="input-group-abunawas-text"><i class="fas fa-vote-yea"></i></span>
+            <select name="tingkatkendala" id="saran" class="form-select">
+                <option value="normal">Normal</option>
+                <option value="sedang">Sedang</option>
+                <option value="tinggi">Tinggi</option>
+            </select>
+        </div>
+
+        <div class="input-group-abunawas">
+            <input type="file" class="form-control-abunawas" name="uploadfile" id="gambar">
+            <label class="input-group-abunawas-text" for="gambar"><i class="fas fa-image"></i></label>
+        </div>
+        <input type="hidden" name="secure_token" value="abc123secure">
+        <div class="card-footer">
+            <div class="d-grid">
+                <button type="submit" id="sendReport" class="button-send-report">Kirim</button>
+            </div>
+        </div>
+    </form>
+</div>
     `
     document.body.appendChild(popupreport);
     // Buat tombol
@@ -695,7 +689,11 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonMain.href = "#";
     buttonMain.textContent = "☎️ Laporan Masalah";
     buttonMain.style.position = "fixed";
-    buttonMain.style.bottom = "40px";
+    if (isMobileDevice()) {
+        buttonMain.style.bottom = "40px";
+    } else {
+        buttonMain.style.bottom = "0";
+    }
     buttonMain.style.left = "10%";
     buttonMain.style.zIndex = "100000";
     buttonMain.style.height = "45px";
