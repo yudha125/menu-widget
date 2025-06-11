@@ -276,6 +276,8 @@ document.addEventListener("DOMContentLoaded", function () {
     footer,.footer{
     position:fixed;
     bottom:0;
+    width:100%;
+    height:40px
     left:50;
     transform: translateX(-50%);
     z-index:2000;
@@ -718,7 +720,7 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonMain.href = "#";
     buttonMain.textContent = "☎️ Laporan Masalah";
     buttonMain.style.position = "fixed";
-    buttonMain.style.bottom = "0";
+    buttonMain.style.bottom = "40px";
     buttonMain.style.left = "10%";
     buttonMain.style.zIndex = "100000";
     buttonMain.style.height = "45px";
