@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     .popup-report {
             display: none;
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             z-index: 1000001;
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     
         .popup-report .popup-content {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
