@@ -347,12 +347,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     `
     if (!isMobileDevice()) {
-        cssText += `    .results {
-            background: linear-gradient(0deg, rgb(16, 29, 31) 0 %, rgb(22, 22, 31) 50 %, rgb(68, 80, 107) 100 %)!important;
-    box - shadow: 4px 4px 10px rgba(26, 229, 243, 0.919)!important;
+        cssText += `    
+    .results {
+        background: linear-gradient(0deg, rgb(16, 29, 31) 0 %, rgb(22, 22, 31) 50 %, rgb(68, 80, 107) 100 %)!important;
+        box - shadow: 4px 4px 10px rgba(26, 229, 243, 0.919)!important;
     }
-     .results {
-    height: 263px;
+    .results {
+        height: 263px;
     }
     .results - number{
         padding: 2px;
