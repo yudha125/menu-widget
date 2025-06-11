@@ -151,6 +151,200 @@ document.addEventListener("DOMContentLoaded", function () {
     #liscroll {
         margin: 5px 0px 5px 0px !important;
     }
+    
+
+
+    .button - main.button - absolute:hover {
+        background: linear - gradient(179deg, rgba(2, 0, 36, 1) 0 %, rgba(9, 9, 121, 1) 27 %, rgba(22, 93, 107, 1) 100 %);
+        color: white;
+    }
+    
+    .form - control - abunawas::placeholder {
+        color: rgba(87, 87, 99, 1)!important; /* Ganti sesuai warna yang diinginkan */
+        opacity: 1; /* Supaya warna tidak transparan */
+    }
+    
+    .popup - report {
+        display: none !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z - index: 1000001;
+        width: 100 %;
+        height: 100 %;
+        background - image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
+        background - repeat: no - repeat;
+        background - size: cover;
+        background - position: center;
+    }
+
+    #popupreport.open{
+        display: block;
+    }
+        
+            .popup - report.popup - content {
+        position: absolute;
+        top: 50 %;
+        left: 50 %;
+        transform: translate(-50 %, -50 %);
+        width: 80 %;
+        max - width: 600px;
+        background - color: rgba(255, 255, 255, 0.9);
+        border - radius: 10px;
+        padding: 20px;
+        box - shadow: 4px 4px 8px rgb(15, 177, 177);
+        display: flex;
+        flex - direction: column;
+        z - index: 99999999;
+    }
+        
+            .popup - report.close - popup {
+        position: absolute;
+        top: -30px;
+        right: -20px;
+        font - size: 24px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
+        padding: 5px 10px;
+        border - radius: 50 %;
+        box - shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+        
+            .popup - report.info - status - report {
+        position: absolute;
+        top: 5px;
+        left: 50 %;
+        transform: translateX(-50 %);
+        font - size: 17px;
+        color: rgb(7, 64, 82);
+        font - weight: bold;
+        text - align: center;
+        background - color: aquamarine;
+        padding: 10px;
+        border - radius: 10px;
+        display: none;
+    }
+        
+            .popup - report.popup - content.logo {
+        display: flex;
+        justify - content: center;
+        background - color: black;
+
+    }
+        
+            .popup - report.popup - content.logo img {
+        width: 300px;
+        height: auto;
+
+    }
+
+
+
+    #formReport {
+        display: flex;
+        flex - direction: column;
+        gap: 15px;
+        max - width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    #formReport.input - group - abunawas {
+        display: flex;
+        align - items: stretch;
+        width: 100 %;
+    }
+
+    #formReport.input - group - abunawas - text {
+        background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
+        color: #ffffff;
+        font - weight: bold;
+        border - radius: 6px 0 0 6px;
+        padding: 10px 15px;
+        display: flex;
+        align - items: center;
+        justify - content: center;
+        min - width: 45px;
+    }
+
+    #formReport.form - control - abunawas,
+        #formReport.form - select,
+        #formReport textarea {
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        border - radius: 0 6px 6px 0;
+        width: 100 %;
+        font - size: 14px;
+        color: black!important;
+        font - family: Arial, Helvetica, sans - serif!important;
+    }
+
+    #formReport textarea {
+        resize: vertical;
+        min - height: 120px;
+
+    }
+
+    #formReport.input - group - abunawas input[type = "file"] {
+        border - radius: 6px 0 0 6px;
+    }
+
+    #formReport.input - group - abunawas label.input - group - abunawas - text {
+        border - radius: 0 6px 6px 0;
+        background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
+        font - weight: bold;
+        cursor: pointer;
+    }
+
+    #formReport #text - berjalan {
+        background - color: rgba(0, 128, 128, 0.15);
+        padding: 8px 10px;
+        border - radius: 8px;
+        margin - bottom: 10px;
+        position: relative;
+    }
+
+    #formReport.closeteks {
+        position: absolute;
+        top: 4px;
+        right: 6px;
+        color: red;
+        font - size: 18px;
+        cursor: pointer;
+    }
+    #formReport input,
+        #formReport select{
+        color: black!important;
+        font - family: Arial, Helvetica, sans - serif!important;
+    }
+
+    #sendReport {
+        background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
+        color: #ffffff;
+        font - weight: bold;
+        border: none;
+        padding: 10px 15px;
+        border - radius: 6px;
+        cursor: pointer;
+        transition: background - color 0.3s ease;
+    }
+
+    @media(max - width: 600px) {
+        #formReport {
+            padding: 15px;
+        }
+
+        #formReport.input - group - abunawas - text {
+            font - size: 12px;
+            padding: 8px;
+        }
+
+        #formReport.form - control - abunawas,
+            #formReport.form - select {
+            font - size: 13px;
+        }
+    }
     `
     if (!isMobileDevice()) {
         cssText += `    .results {
@@ -426,226 +620,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-
-
-});
-function isMobileDevice() {
-    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-}
-window.addEventListener("scroll", function () {
-    const y = window.scrollY;
-    const frame = document.querySelector("img#frame");
-
-    if (!frame) return;
-
-    if (y < 300) {
-        frame.style.height = (120 - (y * 0.133)) + "px"; // dari 120 ke 80
-        frame.style.top = (-3 * (y / 300)) + "px"; // dari 0 ke -40
-    } else {
-        frame.style.height = "80px";
-        frame.style.top = "-3px";
-    }
-
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const style = document.createElement("style");
-    style.textContent = `
-
-
-    .button - main.button - absolute:hover {
-    background: linear - gradient(179deg, rgba(2, 0, 36, 1) 0 %, rgba(9, 9, 121, 1) 27 %, rgba(22, 93, 107, 1) 100 %);
-    color: white;
-}
-    
-        .form - control - abunawas::placeholder {
-    color: rgba(87, 87, 99, 1)!important; /* Ganti sesuai warna yang diinginkan */
-    opacity: 1; /* Supaya warna tidak transparan */
-}
-    
-        .popup - report {
-    display: none !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z - index: 1000001;
-    width: 100 %;
-    height: 100 %;
-    background - image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
-    background - repeat: no - repeat;
-    background - size: cover;
-    background - position: center;
-}
-
-#popupreport.open{
-    display: block;
-}
-    
-        .popup - report.popup - content {
-    position: absolute;
-    top: 50 %;
-    left: 50 %;
-    transform: translate(-50 %, -50 %);
-    width: 80 %;
-    max - width: 600px;
-    background - color: rgba(255, 255, 255, 0.9);
-    border - radius: 10px;
-    padding: 20px;
-    box - shadow: 4px 4px 8px rgb(15, 177, 177);
-    display: flex;
-    flex - direction: column;
-    z - index: 99999999;
-}
-    
-        .popup - report.close - popup {
-    position: absolute;
-    top: -30px;
-    right: -20px;
-    font - size: 24px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
-    padding: 5px 10px;
-    border - radius: 50 %;
-    box - shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-}
-    
-        .popup - report.info - status - report {
-    position: absolute;
-    top: 5px;
-    left: 50 %;
-    transform: translateX(-50 %);
-    font - size: 17px;
-    color: rgb(7, 64, 82);
-    font - weight: bold;
-    text - align: center;
-    background - color: aquamarine;
-    padding: 10px;
-    border - radius: 10px;
-    display: none;
-}
-    
-        .popup - report.popup - content.logo {
-    display: flex;
-    justify - content: center;
-    background - color: black;
-
-}
-    
-        .popup - report.popup - content.logo img {
-    width: 300px;
-    height: auto;
-
-}
-
-
-
-#formReport {
-    display: flex;
-    flex - direction: column;
-    gap: 15px;
-    max - width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-#formReport.input - group - abunawas {
-    display: flex;
-    align - items: stretch;
-    width: 100 %;
-}
-
-#formReport.input - group - abunawas - text {
-    background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
-    color: #ffffff;
-    font - weight: bold;
-    border - radius: 6px 0 0 6px;
-    padding: 10px 15px;
-    display: flex;
-    align - items: center;
-    justify - content: center;
-    min - width: 45px;
-}
-
-#formReport.form - control - abunawas,
-    #formReport.form - select,
-    #formReport textarea {
-    border: 1px solid #ccc;
-    padding: 10px 15px;
-    border - radius: 0 6px 6px 0;
-    width: 100 %;
-    font - size: 14px;
-    color: black!important;
-    font - family: Arial, Helvetica, sans - serif!important;
-}
-
-#formReport textarea {
-    resize: vertical;
-    min - height: 120px;
-
-}
-
-#formReport.input - group - abunawas input[type = "file"] {
-    border - radius: 6px 0 0 6px;
-}
-
-#formReport.input - group - abunawas label.input - group - abunawas - text {
-    border - radius: 0 6px 6px 0;
-    background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
-    font - weight: bold;
-    cursor: pointer;
-}
-
-#formReport #text - berjalan {
-    background - color: rgba(0, 128, 128, 0.15);
-    padding: 8px 10px;
-    border - radius: 8px;
-    margin - bottom: 10px;
-    position: relative;
-}
-
-#formReport.closeteks {
-    position: absolute;
-    top: 4px;
-    right: 6px;
-    color: red;
-    font - size: 18px;
-    cursor: pointer;
-}
-#formReport input,
-    #formReport select{
-    color: black!important;
-    font - family: Arial, Helvetica, sans - serif!important;
-}
-
-#sendReport {
-    background: linear - gradient(0deg, rgb(0, 0, 0) 0 %, rgb(23, 23, 68) 50 %, rgb(81, 105, 167) 100 % 100 %);
-    color: #ffffff;
-    font - weight: bold;
-    border: none;
-    padding: 10px 15px;
-    border - radius: 6px;
-    cursor: pointer;
-    transition: background - color 0.3s ease;
-}
-
-@media(max - width: 600px) {
-    #formReport {
-        padding: 15px;
-    }
-
-    #formReport.input - group - abunawas - text {
-        font - size: 12px;
-        padding: 8px;
-    }
-
-    #formReport.form - control - abunawas,
-        #formReport.form - select {
-        font - size: 13px;
-    }
-}
-`
-    document.head.appendChild(style);
     const popupreport = document.createElement("div");
     popupreport.className = "popup-report";
     popupreport.id = "popupreport";
@@ -773,7 +747,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
+
 });
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+window.addEventListener("scroll", function () {
+    const y = window.scrollY;
+    const frame = document.querySelector("img#frame");
+
+    if (!frame) return;
+
+    if (y < 300) {
+        frame.style.height = (120 - (y * 0.133)) + "px"; // dari 120 ke 80
+        frame.style.top = (-3 * (y / 300)) + "px"; // dari 0 ke -40
+    } else {
+        frame.style.height = "80px";
+        frame.style.top = "-3px";
+    }
+
+});
+
+
 
 
 (function () {
