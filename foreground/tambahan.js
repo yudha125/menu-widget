@@ -157,6 +157,13 @@ document.addEventListener("DOMContentLoaded", function () {
             background: linear-gradient(0deg, rgb(16, 29, 31) 0 %, rgb(22, 22, 31) 50 %, rgb(68, 80, 107) 100 %)!important;
     box - shadow: 4px 4px 10px rgba(26, 229, 243, 0.919)!important;
     }
+     .results {
+    height: 263px;
+    }
+    .results - number{
+        padding: 2px;
+        font - size: 13px!important;
+    }
     `
     } else {
         cssText += `
@@ -222,13 +229,8 @@ document.addEventListener("DOMContentLoaded", function () {
         margin - top: auto;
         margin - bottom: auto;
     }
-    .results - number{
-        padding: 2px;
-        font - size: 13px!important;
-    }
-        .results {
-    height: 263px;
-    }
+    
+       
     #result - slideshow {
         max - height: 172px;
         overflow - y: auto;
@@ -268,7 +270,12 @@ document.addEventListener("DOMContentLoaded", function () {
         min - width: 180px;
         margin - top: 50px;
     }
-
+    footer,footer{
+    position:fixed;
+    bottom:0
+    left:50;
+    tranform: translateX(-50%);
+    }
 
     `};
     style.textContent = cssText;
