@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     .popup-report {
-        display: none !important;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
