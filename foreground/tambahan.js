@@ -209,6 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
             padding: 5px 10px;
             border-radius: 50%;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            z-index:999999999
         }
     
         .popup-report .info-status-report {
