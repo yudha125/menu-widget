@@ -384,6 +384,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .inner-wrap .panel-blue{
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
         max-height:700px;
+        margin-bottom:45px;
         overflow-y:auto;
     }
     
@@ -760,7 +761,7 @@ window.addEventListener("scroll", function () {
     if (!frame) return;
 
     if (y < 300) {
-        frame.style.height = (120-(y * 0.133)) + "px"; // dari 120 ke 80
+        frame.style.height = (120 - (y * 0.133)) + "px"; // dari 120 ke 80
         frame.style.top = (-3 * (y / 300)) + "px"; // dari 0 ke-40
     } else {
         frame.style.height = "80px";
@@ -826,7 +827,7 @@ window.addEventListener("scroll", function () {
             diff: function (vector) {
                 var target = this.copy();
                 return Math.sqrt(
-                    (target.x-= vector.x) * target.x + (target.y-= vector.y) * target.y
+                    (target.x -= vector.x) * target.x + (target.y -= vector.y) * target.y
                 );
             },
 
@@ -846,10 +847,10 @@ window.addEventListener("scroll", function () {
             this.start = start;
             this.pos = this.start.copy();
             this.target = target;
-            this.spread = Math.round(Math.random() * (maxP-minP)) + minP;
+            this.spread = Math.round(Math.random() * (maxP - minP)) + minP;
             this.distance = target.diff(start);
             this.speed = speed || Math.random() * 5 + 15;
-            this.angle = Math.atan2(target.y-start.y, target.x-start.x);
+            this.angle = Math.atan2(target.y - start.y, target.x - start.x);
             this.velocity = new Vector(
                 Math.cos(this.angle) * this.speed,
                 Math.sin(this.angle) * this.speed
@@ -858,7 +859,7 @@ window.addEventListener("scroll", function () {
             this.particals = [];
             this.prevPositions = [];
 
-            var colorSet = colors[Math.round(Math.random() * (colors.length-1))];
+            var colorSet = colors[Math.round(Math.random() * (colors.length - 1))];
 
             for (var i = 0; i < this.spread; i++) {
                 this.particals.push(new Partical(target.copy(), colorSet));
@@ -869,7 +870,7 @@ window.addEventListener("scroll", function () {
             constructor: Firework,
 
             draw: function () {
-                var last = this.prevPositions[this.prevPositions.length-1] || this.pos;
+                var last = this.prevPositions[this.prevPositions.length - 1] || this.pos;
 
                 ctx.beginPath();
                 ctx.moveTo(last.x, last.y);
@@ -911,7 +912,7 @@ window.addEventListener("scroll", function () {
             this.gravity = Math.random() * 3 + 0.1;
             this.alpha = .8;
             this.angle = Math.random() * (Math.PI * 2);
-            this.color = colors[Math.round(Math.random() * (colors.length-1))];
+            this.color = colors[Math.round(Math.random() * (colors.length - 1))];
             this.prevPositions = [];
         }
 
@@ -919,7 +920,7 @@ window.addEventListener("scroll", function () {
             constructor: Partical,
 
             draw: function () {
-                var last = this.prevPositions[this.prevPositions.length-1] || this.pos;
+                var last = this.prevPositions[this.prevPositions.length - 1] || this.pos;
 
                 ctx.beginPath();
                 ctx.moveTo(last.x, last.y);
@@ -937,9 +938,9 @@ window.addEventListener("scroll", function () {
                     this.prevPositions.push(this.pos.copy());
 
                     if (this.prevPositions.length > 10) this.prevPositions.shift();
-                    if (this.speed > 1) this.speed-= this.ease;
+                    if (this.speed > 1) this.speed -= this.ease;
 
-                    this.alpha-= 0.01;
+                    this.alpha -= 0.01;
                     this.gravity += 0.01;
 
                     this.pos.add({
@@ -952,7 +953,7 @@ window.addEventListener("scroll", function () {
 
         function addFirework(target) {
             var startPos = new Vector(W / 2, H);
-            target = target || new Vector(Math.random() * W, Math.random() * (H-300));
+            target = target || new Vector(Math.random() * W, Math.random() * (H - 300));
             fireworks.push(new Firework(startPos, target));
         }
 
