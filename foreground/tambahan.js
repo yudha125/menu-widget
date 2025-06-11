@@ -389,6 +389,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `
     } else {
         cssText += `
+    
     .buttonWrap.buttons.button-blue.contactSubmitButton{
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
     }
@@ -399,13 +400,15 @@ document.addEventListener("DOMContentLoaded", function () {
     .inner-wrap .panel-blue{
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
         max-height:360px;
-        padding-bottom:60px;
+        padding-bottom:20px;
+        haight:360;
     }
     .panel-blue #slider-hasil{
-        max-height:340px;
+        height:186px;
         overflow-y:auto;
         padding-bottom: 10px;
         line-height: 1.5;
+
         
     }
        
