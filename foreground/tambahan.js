@@ -513,13 +513,13 @@ document.addEventListener("DOMContentLoaded", function () {
     bannerDiv.className = 'custom-banner';
     bannerDiv.style.margin = '20px 0';
     bannerDiv.innerHTML = `
-    < img src = "https://yudha125.github.io/menu-widget/foreground/giftpanjang.gif" alt = "Banner Iklan" style = "width:100%; max-width:840px; display:block; margin:0 auto;" >
+    <img src="https://yudha125.github.io/menu-widget/foreground/giftpanjang.gif" alt="Banner Iklan"
+    style="width:100%; max-width:840px; display:block; margin:0 auto;">
         `;
 
     // Cari parent container
     const slider = document.getElementById('slider');
     const parent = slider.parentNode;
-
     // Sisipkan setelah slider
     if (slider && parent) {
         parent.insertBefore(bannerDiv, document.getElementById('latest-results'));
