@@ -170,8 +170,8 @@ document.addEventListener("DOMContentLoaded", function () {
         top: 0;
         left: 0;
         z-index: 1000001;
-        width: 100 %;
-        height: 100 %;
+        width: 100%;
+        height: 100%;
         background-image: url("https://yudha125.github.io/menu-widget/foreground/slider/BGTOTOTAROT_12.webp");
         background-repeat: no-repeat;
         background-size: cover;
@@ -330,20 +330,6 @@ document.addEventListener("DOMContentLoaded", function () {
         transition: background-color 0.3s ease;
     }
 
-    @media(max-width: 600px) {
-        #formReport {
-            padding: 15px;
-        }
-
-        #formReport.input-group-abunawas-text {
-            font-size: 12px;
-            padding: 8px;
-        }
-
-        #formReport.form-control-abunawas,
-            #formReport.form-select {
-            font-size: 13px;
-        }
     }
     `
     if (!isMobileDevice()) {
