@@ -458,7 +458,7 @@ document.addEventListener("DOMContentLoaded", function () {
 }
     
         .popup - report {
-    display: none;
+    display: none !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -644,7 +644,7 @@ document.addEventListener("DOMContentLoaded", function () {
     popupreport.className = "popup-report";
     popupreport.id = "popupreport";
     popupreport.innerHTML = `
-    <div div class="popup-content" >
+    <di div class="popup-content" >
                 <div class="close-popup" onclick="this.parentElement.parentElement.classList.remove('open');">X</div>
                 <div class="info-status-report"></div>
                 <div class="logo">
@@ -705,7 +705,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                     </div>
                 </form>
-            </div >
+            </di >
     `
     document.body.appendChild(popupreport);
     // Buat tombol
