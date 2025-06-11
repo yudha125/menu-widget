@@ -397,7 +397,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     .inner-wrap .panel-blue{
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
-        max-height:400px;
+        max-height:360px;
         margin-bottom:60px;
     }
     .panel-blue #slider-hasil{
