@@ -200,8 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
         .popup-report .close-popup {
             position: absolute;
-            top: -30px;
-            right: -20px;
+            top: 0px;
+            right: 0px;
             font-size: 24px;
             color: rgb(255, 255, 255);
             cursor: pointer;
