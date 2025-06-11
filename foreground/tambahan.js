@@ -401,7 +401,7 @@ document.addEventListener("DOMContentLoaded", function () {
         margin-bottom:60px;
     }
     .panel-blue #slider-hasil{
-        max-height:357px;
+        max-height:340px;
         overflow-y:auto;
         padding-bottom: 10px;
         margin-bottom:40px;
