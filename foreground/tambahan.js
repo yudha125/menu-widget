@@ -372,10 +372,9 @@ document.addEventListener("DOMContentLoaded", function () {
     
     .item.bank {
         position: relative;
-        /* background-image: url('https://yudha125.github.io/menu-widget/foreground/bank/GOPAY.gif');
         background-size: 170px 90px;
         background-position: center;
-        background-repeat: no-repeat; */
+        background-repeat: no-repeat; 
         height: 90px;
         border: none;
         background-color: rgba(250, 250, 250, 0);
