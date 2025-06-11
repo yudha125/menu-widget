@@ -273,11 +273,11 @@ document.addEventListener("DOMContentLoaded", function () {
     `}
     if (isMobileDevice()) {
         cssText += `
-    footer,footer{
+    footer,.footer{
     position:fixed;
-    bottom:0
+    bottom:0;
     left:50;
-    tranform: translateX(-50%);
+    transform: translateX(-50%);
     z-index:2000;
     }
 
