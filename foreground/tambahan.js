@@ -1,8 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let initialType = window.innerWidth;
-    if (initialType <= 768){
-        console.log("Tampilan mobile");
-    } else {
+let initialType = window.innerWidth;
+
+if (initialType <= 768) {
+    console.log("Tampilan mobile");
+    // lakukan sesuatu untuk mobile
+}else{
+    document.addEventListener("DOMContentLoaded", function () {
+  
     
         const style = document.createElement("style");
         style.textContent = `
@@ -413,7 +416,6 @@ document.addEventListener("DOMContentLoaded", function () {
             frame.style.height = "80px";
             frame.style.top = "-3px";
         }
+
+    });
 }
-});
-
-
