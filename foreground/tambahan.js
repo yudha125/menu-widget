@@ -399,11 +399,11 @@ document.addEventListener("DOMContentLoaded", function () {
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
         max-height:400px;
         margin-bottom:60px;
-        overflow-y:auto;
     }
     .panel-blue .slider-hasil{
         max-height:357px;
         overflow-y:auto;
+        padding-bottom: 10px;
     }
     .item.slides {
         margin-top: auto;
