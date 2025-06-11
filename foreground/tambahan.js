@@ -404,7 +404,7 @@ document.addEventListener("DOMContentLoaded", function () {
         max-height:357px;
         overflow-y:auto;
         padding-bottom: 10px;
-        margin-battom:40px;
+        margin-bottom:40px;
     }
     .item.slides {
         margin-top: auto;
