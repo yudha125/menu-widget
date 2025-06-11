@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
     bottom:0;
     width:100%;
     height:40px
-    left:50;
+    left:50%;
     transform: translateX(-50%);
     z-index:2000;
     }
