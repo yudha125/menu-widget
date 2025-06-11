@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-    }
+    
     `
     if (!isMobileDevice()) {
         cssText += `    
@@ -390,6 +390,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         cssText += `
     
+    #loginBtnHeader{
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
+    }
     .buttonWrap.buttons.button-blue.contactSubmitButton{
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 68) 50%, rgb(81, 105, 167) 100%);
     }
