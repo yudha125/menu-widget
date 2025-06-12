@@ -569,6 +569,11 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+    const splasher = document.createElement("img");
+    splasher.className = "splasher";
+    splasher.src = "https://yudha125.github.io/menu-widget/foreground/kotak_gpg.gif";
+    splasher.alt = "Splasher TotoTarot";
+    document.body.appendChild(splasher);
     const latestResults = document.getElementById("latest-results");
     if (latestResults) {
         // Buat elemen frame atas
@@ -635,7 +640,7 @@ document.addEventListener("DOMContentLoaded", function () {
     popupreport.className = "popup-report";
     popupreport.id = "popupreport";
     popupreport.innerHTML = `
-    <img class="splasher" src="https://yudha125.github.io/menu-widget/foreground/kotak_gpg.gif" alt="splash TotoTarot">
+    
  <div class="popup-content">
     <div class="close-popup" onclick="this.parentElement.parentElement.classList.remove('open');">X</div>
     <div class="info-status-report"></div>
