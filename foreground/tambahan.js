@@ -384,9 +384,10 @@ document.addEventListener("DOMContentLoaded", function () {
     .container-img-bottom-frame{
         margin-top:-20px;
     }
-    #bank{
-        margin-top:-30px;
+    .owl-theme.bankscroll{
+    margin-top:-40px;
     }
+    
     `
     } else {
         cssText += `
@@ -428,9 +429,8 @@ document.addEventListener("DOMContentLoaded", function () {
         overflow-x: hidden;
     }
     
-    .owl-theme.bankscroll{
-    margin-top:-40px;
-    }
+    
+
     .modal-header.close {
     display: flex;
     align-items: center;
