@@ -355,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function () {
         background-color: rgba(250, 250, 250, 0);
     
     }
-    .item.bank.online {
+    .item.bank .online {
         position: absolute;
         z-index: 10;
         /* top: 50%; */
@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", function () {
         transform: translateX(-50 %);
     }
     
-    .item.bank.offline {
+    .item.bank .offline {
         position: absolute;
         z-index: 10;
         /* top: 50%; */
