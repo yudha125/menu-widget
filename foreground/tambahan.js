@@ -358,7 +358,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .item.bank .online {
         position: absolute;
         z-index: 10;
-        /* top: 50%; */
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -367,7 +366,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .item.bank .offline {
         position: absolute;
         z-index: 10;
-        /* top: 50%; */
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -385,6 +383,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     .container-img-bottom-frame{
         margin-top:-20px;
+    }
+    #bank{
+        margin-top:-30px;
     }
     `
     } else {
