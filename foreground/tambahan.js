@@ -225,6 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
             padding: 10px;
             border-radius: 10px;
             display: none;
+            z-index:1000;
         }
     
         .popup-report .popup-content .logo {
@@ -387,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .owl-theme.bankscroll{
     margin-top:-40px;
     }
-    
+
     `
     } else {
         cssText += `
