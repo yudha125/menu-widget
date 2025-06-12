@@ -388,6 +388,13 @@ document.addEventListener("DOMContentLoaded", function () {
     .owl-theme.bankscroll{
     margin-top:-40px;
     }
+    .splasher {
+        position: fixed;
+        left: 10px;
+        bottom: 60px;
+        z-index: 1000;
+        width: 350px;
+    }
 
     `
     } else {
@@ -471,6 +478,13 @@ document.addEventListener("DOMContentLoaded", function () {
     left:50%;
     transform: translateX(-50%);
     z-index:2000;
+    }
+    .splasher {
+        position: fixed;
+        left: 10px;
+        bottom: 60px;
+        z-index: 1000;
+        width: 200px;
     }
 
     `};
@@ -621,6 +635,7 @@ document.addEventListener("DOMContentLoaded", function () {
     popupreport.className = "popup-report";
     popupreport.id = "popupreport";
     popupreport.innerHTML = `
+    <img class="splasher" src="assets/img/kotak_gpg.gif" alt="splash TotoTarot">
  <div class="popup-content">
     <div class="close-popup" onclick="this.parentElement.parentElement.classList.remove('open');">X</div>
     <div class="info-status-report"></div>
