@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     .button-main.button-absolute:hover {
-        background: linear-gradient(179deg, rgba(2, 0, 36, 1) 0 %, rgba(9, 9, 121, 1) 27 %, rgba(22, 93, 107, 1) 100 %);
+        background: linear-gradient(179deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 27%, rgba(22, 93, 107, 1) 100%);
         color: white;
     }
     
@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!isMobileDevice()) {
         cssText += `    
     .results {
-        background: linear-gradient(0deg, rgb(16, 29, 31) 0 %, rgb(22, 22, 31) 50 %, rgb(68, 80, 107) 100 %)!important;
+        background: linear-gradient(0deg, rgb(16, 29, 31) 0%, rgb(22, 22, 31) 50%, rgb(68, 80, 107) 100%)!important;
         box-shadow: 4px 4px 10px rgba(26, 229, 243, 0.919)!important;
     }
     .results {
@@ -360,8 +360,8 @@ document.addEventListener("DOMContentLoaded", function () {
         z-index: 10;
         /* top: 50%; */
         bottom: 0;
-        left: 50 %;
-        transform: translateX(-50 %);
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .item.bank .offline {
@@ -369,17 +369,17 @@ document.addEventListener("DOMContentLoaded", function () {
         z-index: 10;
         /* top: 50%; */
         bottom: 0;
-        left: 50 %;
-        transform: translateX(-50 %);
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .item.bank img {
         position: absolute;
         width: 150px;
         height: 90px;
-        top: 50 %;
-        left: 50 %;
-        transform: translateX(-50 %) translateY(-50 %);
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
         z-index: 1;
         box-shadow:-2px 2px 5px rgba(26, 229, 243, 1);
     }
@@ -437,7 +437,7 @@ document.addEventListener("DOMContentLoaded", function () {
     background-color: rgb(18, 166, 172, 1);
     width: 35px;
     height: 35px;
-    border-radius: 50 %; /* Lebih rapi pakai 50% daripada 25px */
+    border-radius: 50%; /* Lebih rapi pakai 50% daripada 25px */
     padding: 0;
     border: none;
     cursor: pointer;
