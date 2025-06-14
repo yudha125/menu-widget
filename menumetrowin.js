@@ -5,8 +5,8 @@
     multiAction.style.position = 'fixed';
     multiAction.style.width = '80px';
     multiAction.style.height = '80px';
-    multiAction.style.left = '7%';
-    multiAction.style.bottom = '10%';
+    multiAction.style.left = '5%';
+    multiAction.style.bottom = '12%';
     multiAction.style.zIndex = "1000";
 
     // Tombol utama
