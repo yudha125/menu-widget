@@ -6,7 +6,7 @@
     multiAction.style.width = '80px';
     multiAction.style.height = '80px';
     multiAction.style.left = '3%';
-    multiAction.style.bottom = '5%';
+    multiAction.style.bottom = '8%';
     multiAction.style.zIndex = "1000";
 
     // Tombol utama
