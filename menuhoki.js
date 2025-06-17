@@ -15,6 +15,9 @@
         left: 30px;
         bottom: 100px;
     }
+    .cont-widget {
+        width:60px;    
+    }
 }
 
 body {
@@ -111,7 +114,7 @@ body {
 
 .cont-widget {
     height: 60px;
-    width: 60px;
+    width: 80px;
     background: rgba(51, 51, 51, 0);
     border-radius: 15px;
     transition: height 0.4s ease, background 0.3s ease;
