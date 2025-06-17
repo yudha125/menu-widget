@@ -10,115 +10,17 @@
     z-index: 99999;
 }
 
-@media screen and (max-width: 600px) {
-    .widget-menu-fixed {
-        left: 30px;
-        bottom: 100px;
-    }
-}
-
-body {
-    background: rgb(2, 2, 44);
-}
-
-.burger {
-    width: 20px;
-    height: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    background: beige;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px rgb(255, 6, 243);
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        /* box-shadow: 0 0 10px red; */
-    }
-
-    50% {
-        transform: scale(1.05);
-        /* box-shadow: 0 0 20px red; */
-    }
-
-    100% {
-        transform: scale(1);
-        /* box-shadow: 0 0 10px red; */
-    }
-}
-
-@keyframes pulse2 {
-    0% {
-        transform: scale(1);
-        /* box-shadow: 0 0 10px red; */
-    }
-
-    50% {
-        transform: scale(1.5);
-        /* box-shadow: 0 0 20px red; */
-    }
-
-    100% {
-        transform: scale(1);
-        /* box-shadow: 0 0 10px red; */
-    }
-}
-
-@keyframes jump {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-.burger:not(.active) {
-    animation: pulse 1.5s infinite;
-}
-
-.burger span {
-    height: 4px;
-    background-color: #333;
-    border-radius: 2px;
-    transition: all 0.5s ease;
-    /* animation: pulse 1.5s infinite; */
-}
-
-.burger:not(.active) span {
-    animation: pulse 1.5s infinite;
-}
-
-/* Optional: Burger animation to "X" when active */
-.burger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
-
 .cont-widget {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     background: rgba(51, 51, 51, 0);
     border-radius: 15px;
     transition: height 0.4s ease, background 0.3s ease;
     overflow: hidden;
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     padding: 10px;
     gap: 0;
     /* default gap 0 */
@@ -127,17 +29,68 @@ body {
 }
 
 .cont-widget.active {
-    height: 400px;
+    height: 450px;
     background: rgba(51, 51, 51, 1);
-    gap: 20px;
+    /* gap: 20px; */
 }
+
+
+.burger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Tetap center agar transform rapi */
+    align-items: center;
+    cursor: pointer;
+    background: beige;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgb(255, 6, 243);
+    position: relative;
+    gap: 6px;
+    /* Jangan terlalu besar */
+}
+
+.burger span {
+    display: block;
+    height: 4px;
+    width: 24px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+
 
 .telegram-button,
 .whatsapp-button,
 .rtp-button,
 .fb-button {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
     background: beige;
     margin-top: 22px;
@@ -220,6 +173,59 @@ body {
 .widget-tombol img {
     animation: pulse2 1.5s infinite;
 }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /* box-shadow: 0 0 10px red; */
+    }
+
+    50% {
+        transform: scale(1.05);
+        /* box-shadow: 0 0 20px red; */
+    }
+
+    100% {
+        transform: scale(1);
+        /* box-shadow: 0 0 10px red; */
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        transform: scale(1);
+        /* box-shadow: 0 0 10px red; */
+    }
+
+    50% {
+        transform: scale(1.5);
+        /* box-shadow: 0 0 20px red; */
+    }
+
+    100% {
+        transform: scale(1);
+        /* box-shadow: 0 0 10px red; */
+    }
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .widget-menu-fixed {
+        left: 30px;
+        bottom: 100px;
+    }
+}
     </style>
     <div class="cont-widget" id="containerWidget">
             <div class="burger"
@@ -230,28 +236,28 @@ body {
             </div>
             <a href="https://t.me/Metrowin88" class="link-tombol-widget">
                 <div class="telegram-button widget-tombol">
-                    <img src="tele2.png" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/tele2.png" alt="" width="40" height="40">
                 </div>
             </a>
             <a href="https://api.whatsapp.com/send/?phone=85589855093&text&type=phone_number&app_absent=0" class="link-tombol-widget">
                 <div class="whatsapp-button widget-tombol">
-                    <img src="wa2.png" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/wa2.png" alt="" width="40" height="40">
                 </div>
             </a>
             <a href="https://t.ly/rtp-metrowin88" class="link-tombol-widget">
                 <div class="rtp-button widget-tombol">
-                    <img src="rtp2.png" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/rtp2.png" alt="" width="40" height="40">
                 </div>
             </a>
             <a href="https://www.facebook.com/groups/605943798574375" class="link-tombol-widget">
                 <div class="fb-button widget-tombol">
-                    <img src="fb2.png" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/fb2.png" alt="" width="40" height="40">
                 </div>
             </a>
 
         </div>
-        <img src="metrowin.webp" alt="Logo Metrowin88" class="hoki-logo" id="lghok">
-        <img src="tunjuk.webp" alt="" class="tunjuk" id="tunjukgif">
+        <img src="https://yudha125.github.io/menu-widget/Image/metrowin.webp" alt="Logo Metrowin88" class="hoki-logo" id="lghok">
+        <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="" class="tunjuk" id="tunjukgif">
     `;
     document.body.appendChild(menuWid);
 })();
