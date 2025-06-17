@@ -20,9 +20,7 @@
     }
 }
 
-body {
-    background: rgb(2, 2, 44);
-}
+
 
 .burger {
     width: 20px;
