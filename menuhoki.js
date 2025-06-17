@@ -245,13 +245,13 @@ body {
             </a>
             <a href="https://www.facebook.com/groups/officialgruphoki777/" class="link-tombol-widget">
                 <div class="fb-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="" width="40" height="40">
                 </div>
             </a>
 
         </div>
         <img src="https://yudha125.github.io/menu-widget/Image/hoki.webp" alt="Logo Hoki777" class="hoki-logo" id="lghok">
-        <img src="tunjuk.webp" alt="" class="tunjuk" id="tunjukgif">
+        <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="" class="tunjuk" id="tunjukgif">
     `;
     document.body.appendChild(menuWid);
 })();
