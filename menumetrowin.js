@@ -29,7 +29,7 @@
 }
 
 .cont-widget.active {
-    height: 450px;
+    height: auto;
     background: rgba(51, 51, 51, 1);
     /* gap: 20px; */
 }
@@ -228,6 +228,7 @@
 }
     </style>
     <div class="cont-widget" id="containerWidget">
+        <div class="group-widget">
             <div class="burger"
                 onclick="this.classList.toggle('active');document.getElementById('containerWidget').classList.toggle('active');document.getElementById('tunjukgif').classList.toggle('active');document.getElementById('lghok').classList.toggle('active');">
                 <span></span>
@@ -254,7 +255,7 @@
                     <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="" width="40" height="40">
                 </div>
             </a>
-
+            </div>
         </div>
         <img src="https://yudha125.github.io/menu-widget/Image/metrowin.webp" alt="Logo Metrowin88" class="hoki-logo" id="lghok">
         <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="" class="tunjuk" id="tunjukgif">
