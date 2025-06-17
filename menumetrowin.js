@@ -29,7 +29,7 @@
 }
 
 .cont-widget.active {
-    height: 450px;
+    height: 400px;
     background: rgba(51, 51, 51, 1);
     /* gap: 20px; */
 }
