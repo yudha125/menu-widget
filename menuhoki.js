@@ -29,7 +29,7 @@
 }
 
 .cont-widget.active {
-    height: 450px;
+    height: auto;
     background: rgba(51, 51, 51, 1);
     /* gap: 20px; */
 }
@@ -227,35 +227,37 @@
     }
 }
     </style>
-    <div class="cont-widget" id="containerWidget">
-            <div class="burger"
-                onclick="this.classList.toggle('active');document.getElementById('containerWidget').classList.toggle('active');document.getElementById('tunjukgif').classList.toggle('active');document.getElementById('lghok').classList.toggle('active');">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="cont-widget" id="containerWidget">
+            <div class="group-widget">
+                <div class="burger"
+                    onclick="this.classList.toggle('active');document.getElementById('containerWidget').classList.toggle('active');document.getElementById('tunjukgif').classList.toggle('active');document.getElementById('lghok').classList.toggle('active');">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="https://t.me/infogacorhoki777" class="link-tombol-widget">
+                    <div class="telegram-button widget-tombol">
+                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="" width="40" height="40">
+                    </div>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=855764526797&text&type=phone_number&app_absent=0" class="link-tombol-widget">
+                    <div class="whatsapp-button widget-tombol">
+                        <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="" width="40" height="40">
+                    </div>
+                </a>
+                <a href="https://t.ly/rtp-hoki777/" class="link-tombol-widget">
+                    <div class="rtp-button widget-tombol">
+                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="" width="40" height="40">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/groups/officialgruphoki777/" class="link-tombol-widget">
+                    <div class="fb-button widget-tombol">
+                        <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="" width="40" height="40">
+                    </div>
+                </a>
             </div>
-            <a href="https://t.me/infogacorhoki777" class="link-tombol-widget">
-                <div class="telegram-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="" width="40" height="40">
-                </div>
-            </a>
-            <a href="https://api.whatsapp.com/send/?phone=855764526797&text&type=phone_number&app_absent=0" class="link-tombol-widget">
-                <div class="whatsapp-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="" width="40" height="40">
-                </div>
-            </a>
-            <a href="https://t.ly/rtp-hoki777/" class="link-tombol-widget">
-                <div class="rtp-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="" width="40" height="40">
-                </div>
-            </a>
-            <a href="https://www.facebook.com/groups/officialgruphoki777/" class="link-tombol-widget">
-                <div class="fb-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="" width="40" height="40">
-                </div>
-            </a>
-
         </div>
+        
         <img src="https://yudha125.github.io/menu-widget/Image/hoki.webp" alt="Logo Hoki777" class="hoki-logo" id="lghok">
         <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="" class="tunjuk" id="tunjukgif">
     `;
