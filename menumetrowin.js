@@ -29,7 +29,7 @@
 }
 
 .cont-widget.active {
-    height: 400px;
+    height: 450px;
     background: rgba(51, 51, 51, 1);
     /* gap: 20px; */
 }
@@ -236,22 +236,22 @@
             </div>
             <a href="https://t.me/Metrowin88" class="link-tombol-widget">
                 <div class="telegram-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/tele2.png" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="" width="40" height="40">
                 </div>
             </a>
             <a href="https://api.whatsapp.com/send/?phone=85589855093&text&type=phone_number&app_absent=0" class="link-tombol-widget">
                 <div class="whatsapp-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/wa2.png" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="" width="40" height="40">
                 </div>
             </a>
             <a href="https://t.ly/rtp-metrowin88" class="link-tombol-widget">
                 <div class="rtp-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/rtp2.png" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="" width="40" height="40">
                 </div>
             </a>
             <a href="https://www.facebook.com/groups/605943798574375" class="link-tombol-widget">
                 <div class="fb-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/fb2.png" alt="" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="" width="40" height="40">
                 </div>
             </a>
 
