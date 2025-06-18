@@ -5,7 +5,7 @@
     <style>
     .widget-menu-fixed {
     position: fixed;
-    bottom: 130px;
+    bottom: 90px;
     left: 100px;
     z-index: 99999;
 }
