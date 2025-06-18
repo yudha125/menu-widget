@@ -247,7 +247,7 @@
             </a>
             <a href="https://t.ly/rtp-metrowin88" class="link-tombol-widget">
                 <div class="rtp-button widget-tombol">
-                    <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="Whatsapp Metrowin88" width="40" height="40">
+                    <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Metrowin88" width="40" height="40">
                 </div>
             </a>
             <a href="https://www.facebook.com/groups/605943798574375" class="link-tombol-widget">
