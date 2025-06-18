@@ -237,28 +237,28 @@
                 </div>
                 <a href="https://t.me/Squad777official" class="link-tombol-widget">
                     <div class="telegram-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Squad777" width="40" height="40">
                     </div>
                 </a>
                 <a href="" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Squad777" width="40" height="40">
                     </div>
                 </a>
                 <a href="https://t.ly/rtp-squad777" class="link-tombol-widget">
                     <div class="rtp-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Squad777" width="40" height="40">
                     </div>
                 </a>
                 <a href="https://www.facebook.com/share/g/15YseMVEj3/" class="link-tombol-widget">
                     <div class="fb-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook.com Squad777" width="40" height="40">
                     </div>
                 </a>
             </div>
         </div>
         <img src="https://yudha125.github.io/menu-widget/Image/squad.webp" alt="Logo Squad777" class="hoki-logo" id="lghok">
-        <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="" class="tunjuk" id="tunjukgif">
+        <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="Tunjuk Squad777" class="tunjuk" id="tunjukgif">
     `;
     document.body.appendChild(menuWid);
 })();
