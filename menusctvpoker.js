@@ -184,7 +184,7 @@ height:40px;
 
 #downand{
 position:absolute;
-bottom:120px;
+bottom:100px;
 left:100px;
 z-index:999998;
 width:250px;
