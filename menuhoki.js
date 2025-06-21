@@ -250,7 +250,7 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Hoki777" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://www.facebook.com/groups/officialgruphoki777/" class="link-tombol-widget">
+                <a href="https://www.facebook.com/groups/2542412082582577/" class="link-tombol-widget">
                     <div class="fb-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook Hoki777" width="40" height="40">
                     </div>
