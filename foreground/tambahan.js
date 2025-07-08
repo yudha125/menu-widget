@@ -1000,7 +1000,7 @@ window.addEventListener("scroll", function () {
     <style>
     .widget-menu-fixed {
     position: fixed;
-    bottom: 150px;
+    bottom: 200px;
     left: 100px;
     z-index: 99999;
 }
