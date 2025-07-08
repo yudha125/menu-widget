@@ -240,6 +240,11 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Squad777" width="40" height="40">
                     </div>
                 </a>
+                <a href="https://www.facebook.com/groups/squad777.ofc" class="link-tombol-widget">
+                    <div class="fb-button widget-tombol">
+                        <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook.com Squad777" width="40" height="40">
+                    </div>
+                </a>
                 <a href="" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Squad777" width="40" height="40">
