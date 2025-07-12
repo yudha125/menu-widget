@@ -286,7 +286,7 @@ align-items:center;
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Pokerhokibet88" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://pro.rtp-pkhk.biz/" class="link-tombol-widget">
+                <a href="https://gcr.rtp-pkhk.biz/" class="link-tombol-widget">
                     <div class="rtp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Pokerhokibet88" width="40" height="40">
                     </div>
