@@ -281,7 +281,7 @@ align-items:center;
                     <span></span>
                     <span></span>
                 </div>
-                <a href="https://api.whatsapp.com/send/?phone=6285210390096&text&type=phone_number&app_absent=0" class="link-tombol-widget">
+                <a href="https://api.whatsapp.com/send/?phone=855964622878&text&type=phone_number&app_absent=0" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp SctvPoker" width="40" height="40">
                     </div>
