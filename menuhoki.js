@@ -240,7 +240,7 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Hoki777" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=6287879961365&text&type=phone_number&app_absent=0" class="link-tombol-widget">
+                <a href="https://api.whatsapp.com/send/?phone=6282312942359&text&type=phone_number&app_absent=0" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Hoki777" width="40" height="40">
                     </div>
