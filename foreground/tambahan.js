@@ -592,8 +592,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
     const newBankImages = [
-        'BCA.gif', 'BNI.gif', 'BRI.gif', 'DANA.gif',
-        'GOPAY.gif', 'MANDIRI.gif', 'OVO.gif', 'PULSA.gif'
+        'BCA.webp', 'BNI.webp', 'BRI.webp', 'DANA.webp',
+        'GOPAY.webp', 'MANDIRI.webp', 'OVO.webp', 'PULSA.webp','SHOPEEPAY.webp'
     ];
     
     if (bankImages) {
