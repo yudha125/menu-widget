@@ -592,27 +592,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const bankImages = document.querySelectorAll('.owl-carousel.bankscroll .item.bank');
     const newBankImages = [
-        'BCA.gif',
-        'BNI.gif',
-        'BRI.gif',
-        'DANA.gif',
-        'GOPAY.gif',
-        'MANDIRI.gif',
-        'OVO.gif',
-        'PULSA.gif'
+        'BCA.gif', 'BNI.gif', 'BRI.gif', 'DANA.gif',
+        'GOPAY.gif', 'MANDIRI.gif', 'OVO.gif', 'PULSA.gif'
     ];
+    
     if (bankImages) {
         bankImages.forEach((item, index) => {
-            const oldImg = item.querySelector('img');
-            if (oldImg) oldImg.remove(); // Hapus gambar lama jika ada
-
-            const newImg = document.createElement('img');
-            newImg.src = 'https://yudha125.github.io/menu-widget/foreground/bank/' + newBankImages[index]; // Ubah path jika perlu
-            newImg.alt = newBankImages[index].replace('.gif', '');
-            newImg.width = 78;
-            newImg.height = 24;
-
-            item.appendChild(newImg); // Sisipkan gambar baru
+            if (newBankImages[index]) { // Cek apakah ada gambar di index tersebut
+                const oldImg = item.querySelector('img');
+                if (oldImg) oldImg.remove(); // Hapus gambar lama jika ada
+    
+                const newImg = document.createElement('img');
+                newImg.src = 'https://yudha125.github.io/menu-widget/foreground/bank/' + newBankImages[index];
+                newImg.alt = newBankImages[index].replace('.gif', '');
+                newImg.width = 78;
+                newImg.height = 24;
+    
+                item.appendChild(newImg); // Sisipkan gambar baru
+            }
         });
     }
     const items = document.querySelectorAll('#latest-results .owl-carousel .item.slides');
