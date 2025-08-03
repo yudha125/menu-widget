@@ -245,7 +245,7 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook.com Squad777" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://wa.me/qr/K33QUZAWA2VOL1" class="link-tombol-widget">
+                <a href="https://wa.me/62087761520946" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Squad777" width="40" height="40">
                     </div>
@@ -267,3 +267,4 @@
     `;
     document.body.appendChild(menuWid);
 })();
+
