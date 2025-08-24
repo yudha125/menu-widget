@@ -23,16 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
         height:100% !important;
     }
     .modal-body{
-        position:relative;
+        position:absolut;
         width:100% !important;
         height:100% !important;
-    }
-    .modal-body img{
-        position:absolute;
         top:50%;
         left:50%;
         transform:translate(-50%,-50%);
-
+        display:flex;
+        justify-content:center;
+        align-item:center;
+    }
+    .modal-body img{
+        position:relative;
     }
     .modal-open .modal {
         overflow-x: hidden;
@@ -1077,6 +1079,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
