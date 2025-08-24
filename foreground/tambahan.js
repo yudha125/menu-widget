@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .modal-dialog{
         height:100% !important;
     }
+    .modal-body a img{
+        position:fixed !important;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
     
 
     .modal-open .modal {
@@ -1066,6 +1072,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
