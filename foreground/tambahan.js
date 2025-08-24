@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     #myModal{
         width:100% !important;
-        height:100 !important;
+        height:100% !important;
     }
     .navbar-header .navbar-collapse.collapse {}
     
@@ -1054,6 +1054,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
