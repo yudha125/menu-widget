@@ -18,22 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         z-index:999999999999999;
     }
-    .modal-dialog{
-        height:100% !important;
-    }
-    .modal-body a img{
-        position:fixed !important;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-        z-index:99999999999999900;
-    }
     
-
-    .modal-open .modal {
-        overflow-x: hidden;
-        overflow-y: hidden !important;
-    }
     
     .navbar-header .navbar-collapse.collapse {}
     
@@ -1073,6 +1058,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
