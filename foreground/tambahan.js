@@ -16,10 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
         width:100% !important;
         height:100% !important;
         display:flex !important;
+        
+        z-index:999999999999999;
+    }
+    .modal-body{
+        position:absolute;
         top:50%;
         left:50%;
-        tranform:translate(-50%,-50%);
-        z-index:999999999999999;
+        transform:translate(-50%,-50%);
     }
     .modal-open .modal {
         overflow-x: hidden;
@@ -1064,6 +1068,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
