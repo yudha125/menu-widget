@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         z-index:999999999999999;
     }
     .modal-open .modal {
-    overflow:hidden !important;
+        overflow-x: hidden;
+        overflow-y: hidden !important;
     }
     
     .navbar-header .navbar-collapse.collapse {}
@@ -1063,6 +1064,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
