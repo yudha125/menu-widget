@@ -33,9 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         justify-content:center;
         align-item:center;
     }
-    .modal-body img{
-        position:relative;
-    }
+
     .modal-open .modal {
         overflow-x: hidden;
         overflow-y: hidden !important;
@@ -1079,6 +1077,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
