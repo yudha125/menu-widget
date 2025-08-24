@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
         height:100% !important;
     }
     .modal-body{
-        position:absolute;
+        position:relative;
+        width:100% !important;
+        height:100% !important;
     }
     .modal-body img{
         position:absolute;
@@ -1075,6 +1077,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
