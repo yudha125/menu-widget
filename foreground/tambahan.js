@@ -15,7 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
     #myModal{
         width:100% !important;
         height:100% !important;
+        display:flex !important;
+        top:50%;
+        left:50%;
+        tranform:translate(-50%,-50%);
+        z-index:999999999999999;
     }
+    .modal-open .modal {
+    overflow:hidden !important;
+    }
+    
     .navbar-header .navbar-collapse.collapse {}
     
     .news-head {
@@ -1054,6 +1063,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
