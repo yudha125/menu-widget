@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
         background-attachment: fixed !important;
         background-position: center !important;
     }
-    
+    #myModal{
+        width:100%;
+        height:100;
+    }
     .navbar-header .navbar-collapse.collapse {}
     
     .news-head {
@@ -1051,6 +1054,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
