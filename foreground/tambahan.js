@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
         
         z-index:999999999999999;
     }
+    .modal-dialog{
+        height:100% !important;
+    }
     .modal-body{
         position:absolute;
         top:50%;
@@ -1068,6 +1071,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
