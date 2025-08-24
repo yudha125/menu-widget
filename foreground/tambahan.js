@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         top:50%;
         left:50%;
         transform:translate(-50%,-50%);
+        z-index:99999999999999900;
     }
     
 
@@ -1072,6 +1073,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
