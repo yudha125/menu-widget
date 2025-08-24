@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     #myModal{
         width:100% !important;
         height:100% !important;
-        display:flex !important;
         
         z-index:999999999999999;
     }
@@ -1067,6 +1066,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
