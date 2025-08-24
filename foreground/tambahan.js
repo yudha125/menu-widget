@@ -22,17 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .modal-dialog{
         height:100% !important;
     }
-    .modal-body{
-        position:absolut;
-        width:100% !important;
-        height:100% !important;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-        display:flex;
-        justify-content:center;
-        align-item:center;
-    }
+    
 
     .modal-open .modal {
         overflow-x: hidden;
@@ -1077,6 +1067,7 @@ window.addEventListener("scroll", function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
