@@ -286,7 +286,7 @@ align-items:center;
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp SctvPoker" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://info.rtp-sctvpkr.cam/" class="link-tombol-widget">
+                <a href="https://id.rtp-sctvpkr.net/" class="link-tombol-widget">
                     <div class="rtp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP SctvPoker" width="40" height="40">
                     </div>
@@ -331,3 +331,4 @@ align-items:center;
         downand.style.display = "none";
     });
 })();
+
