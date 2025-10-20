@@ -236,7 +236,7 @@
                     <span></span>
                     <span></span>
                 </div>
-                <a href="https://t.me/+b-XJSvwCgiFlMGI9" class="link-tombol-widget">
+                <a href="https://t.me/YUK69_APK_bot" class="link-tombol-widget">
                     <div class="telegram-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Yuk69" width="40" height="40">
                     </div>
