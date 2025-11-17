@@ -1,7 +1,7 @@
-function () {
+(function () {
     const menuWid = document.createElement('div');
     menuWid.className = "widget-menu-fixed";
-    menuWid.innerHTML =
+    menuWid.innerHTML = `
     <style>
    .widget-menu-fixed {
     position: fixed;
@@ -237,27 +237,27 @@ function () {
                 </div>
                 <a href="https://t.me/Squad777official" class="link-tombol-widget">
                     <div class="telegram-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Squad777" width="30" height="30">
+                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Squad777" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://t.me/slot_gacor_squad777_bot" class="link-tombol-widget">
+                <a href="https://www.facebook.com/groups/squad777.ofc" class="link-tombol-widget">
                     <div class="fb-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook.com Squad777" width="30" height="30">
                     </div>
                 </a>
                 <a href="https://wa.me/62087761520946" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Squad777" width="30" height="30">
+                        <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Squad777" width="40" height="40">
                     </div>
                 </a>
                 <a href="https://t.ly/rtp-squad777" class="link-tombol-widget">
                     <div class="rtp-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Squad777" width="30" height="30">
+                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Squad777" width="40" height="40">
                     </div>
                 </a>
-                // <a href="https://t.me/slot_gacor_squad777_bot" class="link-tombol-widget">
+                // <a href="https://www.facebook.com/share/g/15YseMVEj3/" class="link-tombol-widget">
                 //     <div class="fb-button widget-tombol">
-                //         <img src="https://yudha125.github.io/menu-widget/Image/squad777_apk.webp" alt="Facebook.com Squad777" width="30" height="30">
+                //         <img src="https://yudha125.github.io/menu-widget/Image/squad777_apk.webp" alt="Facebook.com Squad777" width="25" height="25">
                 //     </div>
                 // </a>
             </div>
@@ -266,7 +266,4 @@ function () {
         <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="Tunjuk Squad777" class="tunjuk" id="tunjukgif">
     `;
     document.body.appendChild(menuWid);
-)();
-
-
-
+})();
