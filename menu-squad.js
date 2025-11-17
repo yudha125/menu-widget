@@ -132,6 +132,11 @@
     transition-delay: 0.4s;
 }
 
+.cont-widget.active .fb-button2 {
+    transition-delay: 0.4s;
+
+}
+
 .tunjuk {
     position: absolute;
     height: 90px;
@@ -161,6 +166,12 @@
     transform: translateY(0) scale(1.15);
     /* gabungkan transform */
     background: rgb(124, 124, 103);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    .link-tombol-widget:hover .widget-tombol2 {
+    transform: translateY(0) scale(1.15);
+    /* gabungkan transform */
+    background: rgb(0, 0, 0);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -256,7 +267,7 @@
                     </div>
                 </a>
                 // <a href="https://t.me/slot_gacor_squad777_bot" class="link-tombol-widget">
-                //     <div class="fb-button widget-tombol">
+                //     <div class="fb-button2 widget-tombol2">
                 //         <img src="https://yudha125.github.io/menu-widget/Image/squad777_apk.webp" alt="Facebook.com Squad777" width="30" height="30">
                 //     </div>
                 // </a>
@@ -267,7 +278,6 @@
     `;
     document.body.appendChild(menuWid);
 })();
-
 
 
 
