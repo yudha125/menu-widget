@@ -240,7 +240,7 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Squad777" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://www.facebook.com/groups/squad777.ofc" class="link-tombol-widget">
+                <a href="https://t.me/slot_gacor_squad777_bot" class="link-tombol-widget">
                     <div class="fb-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/apk_squad777.png" alt="Facebook.com Squad777" width="40" height="40">
                     </div>
@@ -255,7 +255,7 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Squad777" width="40" height="40">
                     </div>
                 </a>
-                // <a href="https://www.facebook.com/share/g/15YseMVEj3/" class="link-tombol-widget">
+                // <a href="https://t.me/slot_gacor_squad777_bot" class="link-tombol-widget">
                 //     <div class="fb-button widget-tombol">
                 //         <img src="https://yudha125.github.io/menu-widget/Image/apk_squad777.png" alt="Facebook.com Squad777" width="40" height="40">
                 //     </div>
@@ -267,5 +267,6 @@
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
