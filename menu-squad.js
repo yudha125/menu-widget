@@ -104,6 +104,23 @@
     transform: translateY(20px) scale(0.9);
     transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
+}
+.fb-button2 {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    margin-top: 22px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px red;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px) scale(0.9);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
     /* ini tetap tampil, tapi invisible + unclickable awalnya */
 }
 
@@ -130,11 +147,6 @@
 
 .cont-widget.active .fb-button {
     transition-delay: 0.4s;
-}
-
-.cont-widget.active .fb-button2 {
-    transition-delay: 0.4s;
-
 }
 
 .tunjuk {
@@ -166,12 +178,6 @@
     transform: translateY(0) scale(1.15);
     /* gabungkan transform */
     background: rgb(124, 124, 103);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-
-    .link-tombol-widget:hover .widget-tombol2 {
-    transform: translateY(0) scale(1.15);
-    /* gabungkan transform */
-    background: rgb(0, 0, 0);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -267,8 +273,8 @@
                     </div>
                 </a>
                 // <a href="https://t.me/slot_gacor_squad777_bot" class="link-tombol-widget">
-                //     <div class="fb-button2 widget-tombol2">
-                //         <img src="https://yudha125.github.io/menu-widget/Image/squad777_apk.webp" alt="Facebook.com Squad777" width="30" height="30">
+                //     <div bac class="fb-button2 widget-tombol">
+                //         <img src="https://yudha125.github.io/menu-widget/Image/squad777_apk.webp" background="black" alt="Facebook.com Squad777" width="30" height="30">
                 //     </div>
                 // </a>
             </div>
