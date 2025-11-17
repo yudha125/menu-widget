@@ -1,7 +1,7 @@
-(function () {
+function () {
     const menuWid = document.createElement('div');
     menuWid.className = "widget-menu-fixed";
-    menuWid.innerHTML = `
+    menuWid.innerHTML =
     <style>
    .widget-menu-fixed {
     position: fixed;
@@ -93,23 +93,6 @@
     width: 50px;
     cursor: pointer;
     background: beige;
-    margin-top: 22px;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px red;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(20px) scale(0.9);
-    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-}
-.fb-button2 {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    background: rgb(0, 0, 0);
     margin-top: 22px;
     padding: 10px;
     border-radius: 15px;
@@ -273,8 +256,8 @@
                     </div>
                 </a>
                 // <a href="https://t.me/slot_gacor_squad777_bot" class="link-tombol-widget">
-                //     <div bac class="fb-button2 widget-tombol">
-                //         <img src="https://yudha125.github.io/menu-widget/Image/squad777_apk.webp" background="black" alt="Facebook.com Squad777" width="30" height="30">
+                //     <div class="fb-button widget-tombol">
+                //         <img src="https://yudha125.github.io/menu-widget/Image/squad777_apk.webp" alt="Facebook.com Squad777" width="30" height="30">
                 //     </div>
                 // </a>
             </div>
@@ -283,7 +266,7 @@
         <img src="https://yudha125.github.io/menu-widget/Image/tunjuk.webp" alt="Tunjuk Squad777" class="tunjuk" id="tunjukgif">
     `;
     document.body.appendChild(menuWid);
-})();
+)();
 
 
 
