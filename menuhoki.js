@@ -235,7 +235,7 @@
                     <span></span>
                     <span></span>
                 </div>
-                <a href="https://t.me/hoki777ofcbot" class="link-tombol-widget">
+                <a href="https://t.me/hoki777_officialbot" class="link-tombol-widget">
                     <div class="telegram-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Hoki777" width="40" height="40">
                     </div>
@@ -263,6 +263,7 @@
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
