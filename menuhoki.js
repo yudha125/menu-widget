@@ -237,22 +237,22 @@
                 </div>
                 <a href="https://t.me/hoki777_officialbot" class="link-tombol-widget">
                     <div class="telegram-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Hoki777" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Hoki777" width="30" height="30">
                     </div>
                 </a>
                 <a href="https://hk777.top/waHOKI777" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Hoki777" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Hoki777" width="30" height="30">
                     </div>
                 </a>
                 <a href="https://hk777.top/RTP-Hoki777" class="link-tombol-widget">
                     <div class="rtp-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Hoki777" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Hoki777" width="30" height="30">
                     </div>
                 </a>
                 <a href="https://www.facebook.com/groups/2542412082582577/" class="link-tombol-widget">
                     <div class="fb-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook Hoki777" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook Hoki777" width="30" height="30">
                     </div>
                 </a>
             </div>
@@ -263,6 +263,7 @@
     `;
     document.body.appendChild(menuWid);
 })();
+
 
 
 
