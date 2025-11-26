@@ -250,12 +250,12 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Squad777" width="30" height="30">
                     </div>
                 </a>
-                <a href="https://t.ly/rtp-squad777" class="link-tombol-widget">
+                <a href="https://sqone.vip/RTP-Squad777" class="link-tombol-widget">
                     <div class="rtp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Squad777" width="30" height="30">
                     </div>
                 </a>
-                // <a href="https://www.facebook.com/share/g/15YseMVEj3/" class="link-tombol-widget">
+                // <a href="https://t.me/slot_gacor_squad777_bot" class="link-tombol-widget">
                 //     <div class="fb-button widget-tombol">
                 //         <img src="https://yudha125.github.io/menu-widget/Image/squad777_apk.webp" alt="Facebook.com Squad777" width="25" height="25">
                 //     </div>
@@ -267,4 +267,5 @@
     `;
     document.body.appendChild(menuWid);
 })();
+
 
