@@ -241,17 +241,17 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Yuk69" width="40" height="40">
                     </div>
                 </a>
-                 <a href="https://chat.whatsapp.com/FwWd4xHibKH4nzl7tm2FD3" class="link-tombol-widget" title="Bocoran Yuk69">
+                 <a href="https://yk69.top/Livechat-Yuk69" class="link-tombol-widget" title="Bocoran Yuk69">
                     <div class="fb-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/yuk69new.webp" alt="Facebook Yuk69" width="40" height="40">
                     </div>
                 </a>
                 <a href="https://api.whatsapp.com/send/?phone=6281901350480&text&type=phone_number&app_absent=0" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Yuk69" width="40" height="40">
+                        <img src="https://yk69.top/Livechat-Yuk69" alt="Whatsapp Yuk69" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://t.ly/rtp-yuk69" class="link-tombol-widget">
+                <a href="https://yk69.top/RTP-Yuk69" class="link-tombol-widget">
                     <div class="rtp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Yuk69" width="40" height="40">
                     </div>
