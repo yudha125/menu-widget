@@ -238,27 +238,27 @@
                 </div>
                 <a href="https://t.me/YUK69_APK_bot" class="link-tombol-widget">
                     <div class="telegram-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Yuk69" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Yuk69" width="30" height="30">
                     </div>
                 </a>
-                 <a href="https://yk69.top/Livechat-Yuk69" class="link-tombol-widget" title="Bocoran Yuk69">
+                 <a href="https://t.me/+BkTEr_Fe0ngzNzc1" class="link-tombol-widget" title="Asupan Yuk69">
                     <div class="fb-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/yuk69new.webp" alt="Facebook Yuk69" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/yuk69new.webp" alt="Asupan Yuk69" width="40" height="40">
                     </div>
                 </a>
                 <a href="https://api.whatsapp.com/send/?phone=6281901350480&text&type=phone_number&app_absent=0" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
-                        <img src="https://yk69.top/Livechat-Yuk69" alt="Whatsapp Yuk69" width="40" height="40">
+                        <img src="https://yk69.top/Livechat-Yuk69" alt="Whatsapp Yuk69" width="30" height="30">
                     </div>
                 </a>
                 <a href="https://yk69.top/RTP-Yuk69" class="link-tombol-widget">
                     <div class="rtp-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Yuk69" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Yuk69" width="30" height="30">
                     </div>
                 </a>
                 <a href="https://www.facebook.com/groups/yuk69official" class="link-tombol-widget">
                     <div class="fb-button widget-tombol">
-                        <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook Yuk69" width="40" height="40">
+                        <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook Yuk69" width="30" height="30">
                     </div>
                 </a>
                
