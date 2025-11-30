@@ -1,4 +1,4 @@
-
+i
 (function () {
     const menuWid = document.createElement('div');
     menuWid.className = "widget-menu-fixed";
@@ -248,7 +248,7 @@
                 </a>
                 <a href="https://api.whatsapp.com/send/?phone=6281901350480&text&type=phone_number&app_absent=0" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
-                        <img src="https://yk69.top/Livechat-Yuk69" alt="Whatsapp Yuk69" width="30" height="30">
+                        <img src="https://yk69.top/Livechat-Yuk69" alt="Whatsapp Yuk69" width="40" height="40">
                     </div>
                 </a>
                 <a href="https://yk69.top/RTP-Yuk69" class="link-tombol-widget">
