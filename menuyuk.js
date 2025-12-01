@@ -241,7 +241,7 @@ i
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Yuk69" width="30" height="30">
                     </div>
                 </a>
-                 <a href="https://t.me/+BkTEr_Fe0ngzNzc1" class="link-tombol-widget" title="Asupan Yuk69">
+                 <a href="https://t.me/yuk69_official" title="Asupan Yuk69">
                     <div class="fb-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/yuk69new.webp" alt="Asupan Yuk69" width="40" height="40">
                     </div>
