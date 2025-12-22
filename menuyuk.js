@@ -1,4 +1,3 @@
-i
 (function () {
     const livechatDiv = document.createElement('div');
 livechatDiv.setAttribute('data-id', 'VPMWbxN4z7T4');
