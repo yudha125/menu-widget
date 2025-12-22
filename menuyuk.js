@@ -1,5 +1,19 @@
 i
 (function () {
+    const livechatDiv = document.createElement('div');
+livechatDiv.setAttribute('data-id', 'VPMWbxN4z7T4');
+livechatDiv.className = 'livechat_button';
+
+// Buat elemen anchor (<a>)
+const livechatLink = document.createElement('a');
+livechatLink.href = 'https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_19421850';
+livechatLink.textContent = 'Live Chat';
+
+// Masukkan <a> ke dalam <div>
+livechatDiv.appendChild(livechatLink);
+
+// Tambahkan elemen ke body (atau tempat lain sesuai kebutuhan)
+document.body.appendChild(livechatDiv);
     const menuWid = document.createElement('div');
     menuWid.className = "widget-menu-fixed";
     menuWid.innerHTML = `
