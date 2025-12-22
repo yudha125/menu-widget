@@ -1,4 +1,30 @@
 (function () {
+    // Tunggu DOM siap
+document.addEventListener('DOMContentLoaded', function () {
+  // 1. Cari tombol LiveChat asli
+  const originalButton = document.querySelector('div.livechat_button');
+
+  // 2. Jika ditemukan, sembunyikan
+  if (originalButton) {
+    originalButton.style.display = 'none'; // atau originalButton.remove() jika ingin hapus total
+  }
+
+  // 3. Buat atau ambil elemen ikon chat kustom
+  const customTrigger = document.getElementById('custom-chat-trigger');
+  const chatUrl = 'https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_19421850';
+
+  // 4. Tambahkan event klik ke gambar
+  if (customTrigger) {
+    customTrigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      // Buka di tab baru (gunakan '_blank')
+      window.open(chatUrl, '_blank', 'noopener,noreferrer');
+      
+      // Atau, jika ingin buka di tab yang sama:
+      // window.location.href = chatUrl;
+    });
+  }
+});
     const menuWid = document.createElement('div');
     menuWid.className = "widget-menu-fixed";
     menuWid.innerHTML = `
