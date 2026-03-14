@@ -240,7 +240,7 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Hoki777" width="30" height="30">
                     </div>
                 </a>
-                <a href="https://hk777.top/waHOKI777" class="link-tombol-widget">
+                <a href="https://hk777.top/wahoki777" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Hoki777" width="30" height="30">
                     </div>
