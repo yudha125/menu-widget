@@ -235,7 +235,7 @@
                     <span></span>
                     <span></span>
                 </div>
-                <a href="https://t.me/hoki777_officialbot" class="link-tombol-widget">
+                <a href="https://hk777.top/telegramgruphoki777/" class="link-tombol-widget">
                     <div class="telegram-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Hoki777" width="30" height="30">
                     </div>
@@ -250,7 +250,7 @@
                         <img src="https://yudha125.github.io/menu-widget/Image/rtp2.webp" alt="RTP Hoki777" width="30" height="30">
                     </div>
                 </a>
-                <a href="https://www.facebook.com/groups/2542412082582577/" class="link-tombol-widget">
+                <a href="https://hk777.top/facebookgruphoki777/" class="link-tombol-widget">
                     <div class="fb-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/fb2.webp" alt="Facebook Hoki777" width="30" height="30">
                     </div>
