@@ -266,12 +266,12 @@ document.addEventListener('DOMContentLoaded', function () {
                         <img src="https://yudha125.github.io/menu-widget/Image/tele2.webp" alt="Telegram Yuk69" width="30" height="30">
                     </div>
                 </a>
-                 <a href="https://yk69.top/tele-anya" title="Asupan Yuk69">
+                 <a href="https://yk69.top/anya" title="Asupan Yuk69">
                     <div class="fb-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/yuk69new.webp" alt="Asupan Yuk69" width="40" height="40">
                     </div>
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=6281901350480&text&type=phone_number&app_absent=0" class="link-tombol-widget">
+                <a href="https://yk69.top/tele-anya" class="link-tombol-widget">
                     <div class="whatsapp-button widget-tombol">
                         <img src="https://yudha125.github.io/menu-widget/Image/wa2.webp" alt="Whatsapp Yuk69" width="40" height="40">
                     </div>
