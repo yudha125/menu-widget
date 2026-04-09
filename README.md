@@ -29,6 +29,7 @@ Sahabat sejati tidak mengenal Anda karena apa yang Anda *akuakan*, melainkan kar
 > *"Memanggil diri sendiri 'Hacker' hanya karena mampu merusak sistem, 
 > sama absurdnya dengan memanggil diri 'Arsitek' hanya karena mampu membakar gedung."*
 
+
 Sebuah gelar tidak ditentukan oleh seberapa besar kerusakan yang bisa Anda timbulkan, 
 tetapi seberapa banyak manfaat yang bisa Anda bangun. 
 Merusak itu mudah; siapa pun bisa melempar batu ke kaca jendela. 
