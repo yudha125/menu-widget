@@ -5,6 +5,7 @@
 Di ruang ini, kami memegang teguh prinsip bahwa **substansi selalu lebih tinggi daripada sensasi**. 
 
 
+
 ### 🚫 Tentang Orisinalitas
 
 Kami percaya bahwa kode, ide, dan karya adalah cerminan dari jiwa pembuatnya. 
