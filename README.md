@@ -6,6 +6,7 @@ Di ruang ini, kami memegang teguh prinsip bahwa **substansi selalu lebih tinggi 
 
 
 ### 🚫 Tentang Orisinalitas
+
 Kami percaya bahwa kode, ide, dan karya adalah cerminan dari jiwa pembuatnya. 
 - **Copy-Paste** mungkin mempercepat proses, tapi tidak pernah membangun fondasi.
 - **Mengklaim** mungkin terdengar keras, tapi hanya **Bukti** yang bisa berbicara lantang.
